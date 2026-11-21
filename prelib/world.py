@@ -225,3 +225,15 @@ def scorecard_row(name, res, **extra):
     """One row for results/scorecard.csv from an evaluate_lm result."""
     return dict(model=name, family="language", loss=res["loss"], gap=res["gap"], recall_mean=res["recall_mean"],
                 recall_d8=res["recall"][8], recall_d32=res["recall"][32], **extra)
+
+
+def natural_recall(logprob_fn):
+    """Recall on ordinary test documents, where up to three bindings are live at once.
+    Returns a DataFrame with one row per recalled value: distance back to its binding, bindings live, correct."""
+    import pandas as pd
+    test = corpus("test")
+    tok, kind = test["tokens"], test["kind"]
+    pred = np.asarray(logprob_fn(tok)).argmax(-1)
+    n_bound = (kind == K_BVAL).cumsum(1)
+    m = kind == K_QVAL
+    return pd.DataFrame(dict(distance=test["dist"][m], bindings=n_bound[m], correct=(pred == tok)[m]))
