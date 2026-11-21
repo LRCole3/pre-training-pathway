@@ -1,0 +1,640 @@
+{
+ "titles": {
+  "01": "Counting and embeddings: n-grams to word2vec",
+  "02": "Recurrent models, attention and contextual pretraining",
+  "03": "The transformer, built from scratch",
+  "04": "Pretraining objectives and transfer",
+  "05": "Making pretraining scale",
+  "06": "Generative pretraining for images before diffusion",
+  "07": "The diffusion training design space",
+  "08": "Pretrained parts: encoders, CLIP and latent diffusion",
+  "09": "Pretraining diffusion transformers",
+  "10": "Capstone: one architecture, three objectives, the landscape"
+ },
+ "papers": {
+  "shannon1948": {
+   "id": "10.1002/j.1538-7305.1948.tb01338.x",
+   "notebooks": [
+    "01"
+   ]
+  },
+  "shannon1951": {
+   "id": "10.1002/j.1538-7305.1951.tb01366.x",
+   "notebooks": [
+    "01"
+   ]
+  },
+  "chen1996": {
+   "id": "cmp-lg/9606011",
+   "notebooks": [
+    "01"
+   ]
+  },
+  "mikolov2013a": {
+   "id": "1301.3781",
+   "notebooks": [
+    "01"
+   ]
+  },
+  "mikolov2013b": {
+   "id": "1310.4546",
+   "notebooks": [
+    "01"
+   ]
+  },
+  "pennington2014": {
+   "id": "10.3115/v1/D14-1162",
+   "notebooks": [
+    "01"
+   ]
+  },
+  "bojanowski2016": {
+   "id": "1607.04606",
+   "notebooks": [
+    "01"
+   ]
+  },
+  "elman1990": {
+   "id": "10.1207/s15516709cog1402_1",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "bengio1994": {
+   "id": "10.1109/72.279181",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "hochreiter1997": {
+   "id": "10.1162/neco.1997.9.8.1735",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "cho2014": {
+   "id": "1406.1078",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "pascanu2012": {
+   "id": "1211.5063",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "sutskever2014": {
+   "id": "1409.3215",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "bahdanau2014": {
+   "id": "1409.0473",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "luong2015": {
+   "id": "1508.04025",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "dai2015": {
+   "id": "1511.01432",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "peters2018": {
+   "id": "1802.05365",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "howard2018": {
+   "id": "1801.06146",
+   "notebooks": [
+    "02"
+   ]
+  },
+  "vaswani2017": {
+   "id": "1706.03762",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "ba2016": {
+   "id": "1607.06450",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "he2015": {
+   "id": "1512.03385",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "xiong2020": {
+   "id": "2002.04745",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "shaw2018": {
+   "id": "1803.02155",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "su2021": {
+   "id": "2104.09864",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "press2021": {
+   "id": "2108.12409",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "zhang2019rms": {
+   "id": "1910.07467",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "hendrycks2016": {
+   "id": "1606.08415",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "shazeer2020": {
+   "id": "2002.05202",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "ainslie2023": {
+   "id": "2305.13245",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "jacobs1991": {
+   "id": "10.1162/neco.1991.3.1.79",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "shazeer2017": {
+   "id": "1701.06538",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "fedus2021": {
+   "id": "2101.03961",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "jiang2024": {
+   "id": "2401.04088",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "touvron2023": {
+   "id": "2302.13971",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "dao2022": {
+   "id": "2205.14135",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "olsson2022": {
+   "id": "2209.11895",
+   "notebooks": [
+    "03"
+   ]
+  },
+  "devlin2018": {
+   "id": "1810.04805",
+   "notebooks": [
+    "04"
+   ]
+  },
+  "liu2019": {
+   "id": "1907.11692",
+   "notebooks": [
+    "04"
+   ]
+  },
+  "joshi2019": {
+   "id": "1907.10529",
+   "notebooks": [
+    "04"
+   ]
+  },
+  "raffel2019": {
+   "id": "1910.10683",
+   "notebooks": [
+    "04"
+   ]
+  },
+  "lewis2019": {
+   "id": "1910.13461",
+   "notebooks": [
+    "04"
+   ]
+  },
+  "clark2020": {
+   "id": "2003.10555",
+   "notebooks": [
+    "04"
+   ]
+  },
+  "wettig2022": {
+   "id": "2202.08005",
+   "notebooks": [
+    "04"
+   ]
+  },
+  "brown2020": {
+   "id": "2005.14165",
+   "notebooks": [
+    "04"
+   ]
+  },
+  "sennrich2015": {
+   "id": "1508.07909",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "kudo2018": {
+   "id": "1808.06226",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "kingma2014": {
+   "id": "1412.6980",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "loshchilov2016": {
+   "id": "1608.03983",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "loshchilov2017": {
+   "id": "1711.05101",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "press2016": {
+   "id": "1608.05859",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "kaplan2020": {
+   "id": "2001.08361",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "hoffmann2022": {
+   "id": "2203.15556",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "nakkiran2019": {
+   "id": "1912.02292",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "garg2022": {
+   "id": "2208.01066",
+   "notebooks": [
+    "05"
+   ]
+  },
+  "kingma2013": {
+   "id": "1312.6114",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "bowman2015": {
+   "id": "1511.06349",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "goodfellow2014": {
+   "id": "1406.2661",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "arjovsky2017": {
+   "id": "1701.07875",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "gulrajani2017": {
+   "id": "1704.00028",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "miyato2018": {
+   "id": "1802.05957",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "heusel2017": {
+   "id": "1706.08500",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "oord2016": {
+   "id": "1601.06759",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "salimans2017": {
+   "id": "1701.05517",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "naeem2020": {
+   "id": "2002.09797",
+   "notebooks": [
+    "06"
+   ]
+  },
+  "sohldickstein2015": {
+   "id": "1503.03585",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "song2019": {
+   "id": "1907.05600",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "ho2020": {
+   "id": "2006.11239",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "song2020sde": {
+   "id": "2011.13456",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "song2020ddim": {
+   "id": "2010.02502",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "nichol2021": {
+   "id": "2102.09672",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "kingma2021": {
+   "id": "2107.00630",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "salimans2022": {
+   "id": "2202.00512",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "ho2022": {
+   "id": "2207.12598",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "karras2022": {
+   "id": "2206.00364",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "hang2023": {
+   "id": "2303.09556",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "lin2023": {
+   "id": "2305.08891",
+   "notebooks": [
+    "07"
+   ]
+  },
+  "dosovitskiy2020": {
+   "id": "2010.11929",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "chen2020": {
+   "id": "2002.05709",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "he2021": {
+   "id": "2111.06377",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "radford2021": {
+   "id": "2103.00020",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "zhai2023": {
+   "id": "2303.15343",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "oord2017": {
+   "id": "1711.00937",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "esser2020": {
+   "id": "2012.09841",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "rombach2021": {
+   "id": "2112.10752",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "saharia2022": {
+   "id": "2205.11487",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "ramesh2022": {
+   "id": "2204.06125",
+   "notebooks": [
+    "08"
+   ]
+  },
+  "peebles2022": {
+   "id": "2212.09748",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "bao2022": {
+   "id": "2209.12152",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "perez2017": {
+   "id": "1709.07871",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "lipman2022": {
+   "id": "2210.02747",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "liu2022": {
+   "id": "2209.03003",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "ma2024": {
+   "id": "2401.08740",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "esser2024": {
+   "id": "2403.03206",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "zheng2023": {
+   "id": "2306.09305",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "gao2023": {
+   "id": "2303.14389",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "yu2024": {
+   "id": "2410.06940",
+   "notebooks": [
+    "09"
+   ]
+  },
+  "chang2022": {
+   "id": "2202.04200",
+   "notebooks": [
+    "10"
+   ]
+  },
+  "tian2024": {
+   "id": "2404.02905",
+   "notebooks": [
+    "10"
+   ]
+  },
+  "li2024": {
+   "id": "2406.11838",
+   "notebooks": [
+    "10"
+   ]
+  },
+  "austin2021": {
+   "id": "2107.03006",
+   "notebooks": [
+    "10"
+   ]
+  },
+  "sahoo2024": {
+   "id": "2406.07524",
+   "notebooks": [
+    "10"
+   ]
+  },
+  "nie2025": {
+   "id": "2502.09992",
+   "notebooks": [
+    "10"
+   ]
+  },
+  "bao2021": {
+   "id": "2106.08254",
+   "notebooks": [
+    "10"
+   ]
+  },
+  "grattafiori2024": {
+   "id": "2407.21783",
+   "notebooks": [
+    "10"
+   ]
+  }
+ }
+}

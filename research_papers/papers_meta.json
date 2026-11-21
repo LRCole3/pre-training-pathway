@@ -1,0 +1,1773 @@
+{
+ "2104.09864": {
+  "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+  "authors": [
+   "Jianlin Su",
+   "Yu Lu",
+   "Shengfeng Pan",
+   "Ahmed Murtadha",
+   "Bo Wen",
+   "Yunfeng Liu"
+  ],
+  "published": "2021-04-20"
+ },
+ "2108.12409": {
+  "title": "Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation",
+  "authors": [
+   "Ofir Press",
+   "Noah A. Smith",
+   "Mike Lewis"
+  ],
+  "published": "2021-08-27"
+ },
+ "1409.3215": {
+  "title": "Sequence to Sequence Learning with Neural Networks",
+  "authors": [
+   "Ilya Sutskever",
+   "Oriol Vinyals",
+   "Quoc V. Le"
+  ],
+  "published": "2014-09-10"
+ },
+ "1512.03385": {
+  "title": "Deep Residual Learning for Image Recognition",
+  "authors": [
+   "Kaiming He",
+   "Xiangyu Zhang",
+   "Shaoqing Ren",
+   "Jian Sun"
+  ],
+  "published": "2015-12-10"
+ },
+ "1706.03762": {
+  "title": "Attention Is All You Need",
+  "authors": [
+   "Ashish Vaswani",
+   "Noam Shazeer",
+   "Niki Parmar",
+   "Jakob Uszkoreit",
+   "Llion Jones",
+   "Aidan N. Gomez",
+   "Lukasz Kaiser",
+   "Illia Polosukhin"
+  ],
+  "published": "2017-06-12"
+ },
+ "1907.10529": {
+  "title": "SpanBERT: Improving Pre-training by Representing and Predicting Spans",
+  "authors": [
+   "Mandar Joshi",
+   "Danqi Chen",
+   "Yinhan Liu",
+   "Daniel S. Weld",
+   "Luke Zettlemoyer",
+   "Omer Levy"
+  ],
+  "published": "2019-07-24"
+ },
+ "2002.04745": {
+  "title": "On Layer Normalization in the Transformer Architecture",
+  "authors": [
+   "Ruibin Xiong",
+   "Yunchang Yang",
+   "Di He",
+   "Kai Zheng",
+   "Shuxin Zheng",
+   "Chen Xing",
+   "Huishuai Zhang",
+   "Yanyan Lan",
+   "Liwei Wang",
+   "Tie-Yan Liu"
+  ],
+  "published": "2020-02-12"
+ },
+ "2002.05202": {
+  "title": "GLU Variants Improve Transformer",
+  "authors": [
+   "Noam Shazeer"
+  ],
+  "published": "2020-02-12"
+ },
+ "2005.14165": {
+  "title": "Language Models are Few-Shot Learners",
+  "authors": [
+   "Tom B. Brown",
+   "Benjamin Mann",
+   "Nick Ryder",
+   "Melanie Subbiah",
+   "Jared Kaplan",
+   "Prafulla Dhariwal",
+   "Arvind Neelakantan",
+   "Pranav Shyam",
+   "Girish Sastry",
+   "Amanda Askell",
+   "Sandhini Agarwal",
+   "Ariel Herbert-Voss",
+   "Gretchen Krueger",
+   "Tom Henighan",
+   "Rewon Child",
+   "Aditya Ramesh",
+   "Daniel M. Ziegler",
+   "Jeffrey Wu",
+   "Clemens Winter",
+   "Christopher Hesse",
+   "Mark Chen",
+   "Eric Sigler",
+   "Mateusz Litwin",
+   "Scott Gray",
+   "Benjamin Chess",
+   "Jack Clark",
+   "Christopher Berner",
+   "Sam McCandlish",
+   "Alec Radford",
+   "Ilya Sutskever",
+   "Dario Amodei"
+  ],
+  "published": "2020-05-28"
+ },
+ "2202.08005": {
+  "title": "Should You Mask 15% in Masked Language Modeling?",
+  "authors": [
+   "Alexander Wettig",
+   "Tianyu Gao",
+   "Zexuan Zhong",
+   "Danqi Chen"
+  ],
+  "published": "2022-02-16"
+ },
+ "1810.04805": {
+  "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "authors": [
+   "Jacob Devlin",
+   "Ming-Wei Chang",
+   "Kenton Lee",
+   "Kristina Toutanova"
+  ],
+  "published": "2018-10-11"
+ },
+ "1802.05365": {
+  "title": "Deep contextualized word representations",
+  "authors": [
+   "Matthew E. Peters",
+   "Mark Neumann",
+   "Mohit Iyyer",
+   "Matt Gardner",
+   "Christopher Clark",
+   "Kenton Lee",
+   "Luke Zettlemoyer"
+  ],
+  "published": "2018-02-15"
+ },
+ "1211.5063": {
+  "title": "On the difficulty of training Recurrent Neural Networks",
+  "authors": [
+   "Razvan Pascanu",
+   "Tomas Mikolov",
+   "Yoshua Bengio"
+  ],
+  "published": "2012-11-21"
+ },
+ "1508.07909": {
+  "title": "Neural Machine Translation of Rare Words with Subword Units",
+  "authors": [
+   "Rico Sennrich",
+   "Barry Haddow",
+   "Alexandra Birch"
+  ],
+  "published": "2015-08-31"
+ },
+ "1803.02155": {
+  "title": "Self-Attention with Relative Position Representations",
+  "authors": [
+   "Peter Shaw",
+   "Jakob Uszkoreit",
+   "Ashish Vaswani"
+  ],
+  "published": "2018-03-06"
+ },
+ "1406.1078": {
+  "title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+  "authors": [
+   "Kyunghyun Cho",
+   "Bart van Merrienboer",
+   "Caglar Gulcehre",
+   "Dzmitry Bahdanau",
+   "Fethi Bougares",
+   "Holger Schwenk",
+   "Yoshua Bengio"
+  ],
+  "published": "2014-06-03"
+ },
+ "2003.10555": {
+  "title": "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators",
+  "authors": [
+   "Kevin Clark",
+   "Minh-Thang Luong",
+   "Quoc V. Le",
+   "Christopher D. Manning"
+  ],
+  "published": "2020-03-23"
+ },
+ "2101.03961": {
+  "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+  "authors": [
+   "William Fedus",
+   "Barret Zoph",
+   "Noam Shazeer"
+  ],
+  "published": "2021-01-11"
+ },
+ "1910.10683": {
+  "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+  "authors": [
+   "Colin Raffel",
+   "Noam Shazeer",
+   "Adam Roberts",
+   "Katherine Lee",
+   "Sharan Narang",
+   "Michael Matena",
+   "Yanqi Zhou",
+   "Wei Li",
+   "Peter J. Liu"
+  ],
+  "published": "2019-10-23"
+ },
+ "1910.13461": {
+  "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+  "authors": [
+   "Mike Lewis",
+   "Yinhan Liu",
+   "Naman Goyal",
+   "Marjan Ghazvininejad",
+   "Abdelrahman Mohamed",
+   "Omer Levy",
+   "Ves Stoyanov",
+   "Luke Zettlemoyer"
+  ],
+  "published": "2019-10-29"
+ },
+ "1910.07467": {
+  "title": "Root Mean Square Layer Normalization",
+  "authors": [
+   "Biao Zhang",
+   "Rico Sennrich"
+  ],
+  "published": "2019-10-16"
+ },
+ "1907.11692": {
+  "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+  "authors": [
+   "Yinhan Liu",
+   "Myle Ott",
+   "Naman Goyal",
+   "Jingfei Du",
+   "Mandar Joshi",
+   "Danqi Chen",
+   "Omer Levy",
+   "Mike Lewis",
+   "Luke Zettlemoyer",
+   "Veselin Stoyanov"
+  ],
+  "published": "2019-07-26"
+ },
+ "1511.01432": {
+  "title": "Semi-supervised Sequence Learning",
+  "authors": [
+   "Andrew M. Dai",
+   "Quoc V. Le"
+  ],
+  "published": "2015-11-04"
+ },
+ "1801.06146": {
+  "title": "Universal Language Model Fine-tuning for Text Classification",
+  "authors": [
+   "Jeremy Howard",
+   "Sebastian Ruder"
+  ],
+  "published": "2018-01-18"
+ },
+ "1607.06450": {
+  "title": "Layer Normalization",
+  "authors": [
+   "Jimmy Lei Ba",
+   "Jamie Ryan Kiros",
+   "Geoffrey E. Hinton"
+  ],
+  "published": "2016-07-21"
+ },
+ "1607.04606": {
+  "title": "Enriching Word Vectors with Subword Information",
+  "authors": [
+   "Piotr Bojanowski",
+   "Edouard Grave",
+   "Armand Joulin",
+   "Tomas Mikolov"
+  ],
+  "published": "2016-07-15"
+ },
+ "2305.13245": {
+  "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+  "authors": [
+   "Joshua Ainslie",
+   "James Lee-Thorp",
+   "Michiel de Jong",
+   "Yury Zemlyanskiy",
+   "Federico Lebr\u00f3n",
+   "Sumit Sanghai"
+  ],
+  "published": "2023-05-22"
+ },
+ "1808.06226": {
+  "title": "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing",
+  "authors": [
+   "Taku Kudo",
+   "John Richardson"
+  ],
+  "published": "2018-08-19"
+ },
+ "1606.08415": {
+  "title": "Gaussian Error Linear Units (GELUs)",
+  "authors": [
+   "Dan Hendrycks",
+   "Kevin Gimpel"
+  ],
+  "published": "2016-06-27"
+ },
+ "1412.6980": {
+  "title": "Adam: A Method for Stochastic Optimization",
+  "authors": [
+   "Diederik P. Kingma",
+   "Jimmy Ba"
+  ],
+  "published": "2014-12-22"
+ },
+ "1310.4546": {
+  "title": "Distributed Representations of Words and Phrases and their Compositionality",
+  "authors": [
+   "Tomas Mikolov",
+   "Ilya Sutskever",
+   "Kai Chen",
+   "Greg Corrado",
+   "Jeffrey Dean"
+  ],
+  "published": "2013-10-16"
+ },
+ "cmp-lg/9606011": {
+  "title": "An Empirical Study of Smoothing Techniques for Language Modeling",
+  "authors": [
+   "Stanley F. Chen",
+   "Joshua T. Goodman"
+  ],
+  "published": "1996-06-11"
+ },
+ "1301.3781": {
+  "title": "Efficient Estimation of Word Representations in Vector Space",
+  "authors": [
+   "Tomas Mikolov",
+   "Kai Chen",
+   "Greg Corrado",
+   "Jeffrey Dean"
+  ],
+  "published": "2013-01-16"
+ },
+ "2302.13971": {
+  "title": "LLaMA: Open and Efficient Foundation Language Models",
+  "authors": [
+   "Hugo Touvron",
+   "Thibaut Lavril",
+   "Gautier Izacard",
+   "Xavier Martinet",
+   "Marie-Anne Lachaux",
+   "Timoth\u00e9e Lacroix",
+   "Baptiste Rozi\u00e8re",
+   "Naman Goyal",
+   "Eric Hambro",
+   "Faisal Azhar",
+   "Aurelien Rodriguez",
+   "Armand Joulin",
+   "Edouard Grave",
+   "Guillaume Lample"
+  ],
+  "published": "2023-02-27"
+ },
+ "2209.11895": {
+  "title": "In-context Learning and Induction Heads",
+  "authors": [
+   "Catherine Olsson",
+   "Nelson Elhage",
+   "Neel Nanda",
+   "Nicholas Joseph",
+   "Nova DasSarma",
+   "Tom Henighan",
+   "Ben Mann",
+   "Amanda Askell",
+   "Yuntao Bai",
+   "Anna Chen",
+   "Tom Conerly",
+   "Dawn Drain",
+   "Deep Ganguli",
+   "Zac Hatfield-Dodds",
+   "Danny Hernandez",
+   "Scott Johnston",
+   "Andy Jones",
+   "Jackson Kernion",
+   "Liane Lovitt",
+   "Kamal Ndousse",
+   "Dario Amodei",
+   "Tom Brown",
+   "Jack Clark",
+   "Jared Kaplan",
+   "Sam McCandlish",
+   "Chris Olah"
+  ],
+  "published": "2022-09-24"
+ },
+ "2401.04088": {
+  "title": "Mixtral of Experts",
+  "authors": [
+   "Albert Q. Jiang",
+   "Alexandre Sablayrolles",
+   "Antoine Roux",
+   "Arthur Mensch",
+   "Blanche Savary",
+   "Chris Bamford",
+   "Devendra Singh Chaplot",
+   "Diego de las Casas",
+   "Emma Bou Hanna",
+   "Florian Bressand",
+   "Gianna Lengyel",
+   "Guillaume Bour",
+   "Guillaume Lample",
+   "L\u00e9lio Renard Lavaud",
+   "Lucile Saulnier",
+   "Marie-Anne Lachaux",
+   "Pierre Stock",
+   "Sandeep Subramanian",
+   "Sophia Yang",
+   "Szymon Antoniak",
+   "Teven Le Scao",
+   "Th\u00e9ophile Gervet",
+   "Thibaut Lavril",
+   "Thomas Wang",
+   "Timoth\u00e9e Lacroix",
+   "William El Sayed"
+  ],
+  "published": "2024-01-08"
+ },
+ "2205.14135": {
+  "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+  "authors": [
+   "Tri Dao",
+   "Daniel Y. Fu",
+   "Stefano Ermon",
+   "Atri Rudra",
+   "Christopher R\u00e9"
+  ],
+  "published": "2022-05-27"
+ },
+ "1508.04025": {
+  "title": "Effective Approaches to Attention-based Neural Machine Translation",
+  "authors": [
+   "Minh-Thang Luong",
+   "Hieu Pham",
+   "Christopher D. Manning"
+  ],
+  "published": "2015-08-17"
+ },
+ "1409.0473": {
+  "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+  "authors": [
+   "Dzmitry Bahdanau",
+   "Kyunghyun Cho",
+   "Yoshua Bengio"
+  ],
+  "published": "2014-09-01"
+ },
+ "1701.06538": {
+  "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+  "authors": [
+   "Noam Shazeer",
+   "Azalia Mirhoseini",
+   "Krzysztof Maziarz",
+   "Andy Davis",
+   "Quoc Le",
+   "Geoffrey Hinton",
+   "Jeff Dean"
+  ],
+  "published": "2017-01-23"
+ },
+ "2208.01066": {
+  "title": "What Can Transformers Learn In-Context? A Case Study of Simple Function Classes",
+  "authors": [
+   "Shivam Garg",
+   "Dimitris Tsipras",
+   "Percy Liang",
+   "Gregory Valiant"
+  ],
+  "published": "2022-08-01"
+ },
+ "2212.09748": {
+  "title": "Scalable Diffusion Models with Transformers",
+  "authors": [
+   "William Peebles",
+   "Saining Xie"
+  ],
+  "published": "2022-12-19"
+ },
+ "2010.02502": {
+  "title": "Denoising Diffusion Implicit Models",
+  "authors": [
+   "Jiaming Song",
+   "Chenlin Meng",
+   "Stefano Ermon"
+  ],
+  "published": "2020-10-06"
+ },
+ "2002.05709": {
+  "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+  "authors": [
+   "Ting Chen",
+   "Simon Kornblith",
+   "Mohammad Norouzi",
+   "Geoffrey Hinton"
+  ],
+  "published": "2020-02-13"
+ },
+ "2102.09672": {
+  "title": "Improved Denoising Diffusion Probabilistic Models",
+  "authors": [
+   "Alex Nichol",
+   "Prafulla Dhariwal"
+  ],
+  "published": "2021-02-18"
+ },
+ "2103.00020": {
+  "title": "Learning Transferable Visual Models From Natural Language Supervision",
+  "authors": [
+   "Alec Radford",
+   "Jong Wook Kim",
+   "Chris Hallacy",
+   "Aditya Ramesh",
+   "Gabriel Goh",
+   "Sandhini Agarwal",
+   "Girish Sastry",
+   "Amanda Askell",
+   "Pamela Mishkin",
+   "Jack Clark",
+   "Gretchen Krueger",
+   "Ilya Sutskever"
+  ],
+  "published": "2021-02-26"
+ },
+ "2107.00630": {
+  "title": "Variational Diffusion Models",
+  "authors": [
+   "Diederik P. Kingma",
+   "Tim Salimans",
+   "Ben Poole",
+   "Jonathan Ho"
+  ],
+  "published": "2021-07-01"
+ },
+ "1704.00028": {
+  "title": "Improved Training of Wasserstein GANs",
+  "authors": [
+   "Ishaan Gulrajani",
+   "Faruk Ahmed",
+   "Martin Arjovsky",
+   "Vincent Dumoulin",
+   "Aaron Courville"
+  ],
+  "published": "2017-03-31"
+ },
+ "1608.03983": {
+  "title": "SGDR: Stochastic Gradient Descent with Warm Restarts",
+  "authors": [
+   "Ilya Loshchilov",
+   "Frank Hutter"
+  ],
+  "published": "2016-08-13"
+ },
+ "1711.05101": {
+  "title": "Decoupled Weight Decay Regularization",
+  "authors": [
+   "Ilya Loshchilov",
+   "Frank Hutter"
+  ],
+  "published": "2017-11-14"
+ },
+ "2001.08361": {
+  "title": "Scaling Laws for Neural Language Models",
+  "authors": [
+   "Jared Kaplan",
+   "Sam McCandlish",
+   "Tom Henighan",
+   "Tom B. Brown",
+   "Benjamin Chess",
+   "Rewon Child",
+   "Scott Gray",
+   "Alec Radford",
+   "Jeffrey Wu",
+   "Dario Amodei"
+  ],
+  "published": "2020-01-23"
+ },
+ "1912.02292": {
+  "title": "Deep Double Descent: Where Bigger Models and More Data Hurt",
+  "authors": [
+   "Preetum Nakkiran",
+   "Gal Kaplun",
+   "Yamini Bansal",
+   "Tristan Yang",
+   "Boaz Barak",
+   "Ilya Sutskever"
+  ],
+  "published": "2019-12-04"
+ },
+ "2012.09841": {
+  "title": "Taming Transformers for High-Resolution Image Synthesis",
+  "authors": [
+   "Patrick Esser",
+   "Robin Rombach",
+   "Bj\u00f6rn Ommer"
+  ],
+  "published": "2020-12-17"
+ },
+ "2303.15343": {
+  "title": "Sigmoid Loss for Language Image Pre-Training",
+  "authors": [
+   "Xiaohua Zhai",
+   "Basil Mustafa",
+   "Alexander Kolesnikov",
+   "Lucas Beyer"
+  ],
+  "published": "2023-03-27"
+ },
+ "1711.00937": {
+  "title": "Neural Discrete Representation Learning",
+  "authors": [
+   "Aaron van den Oord",
+   "Oriol Vinyals",
+   "Koray Kavukcuoglu"
+  ],
+  "published": "2017-11-02"
+ },
+ "2205.11487": {
+  "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+  "authors": [
+   "Chitwan Saharia",
+   "William Chan",
+   "Saurabh Saxena",
+   "Lala Li",
+   "Jay Whang",
+   "Emily Denton",
+   "Seyed Kamyar Seyed Ghasemipour",
+   "Burcu Karagol Ayan",
+   "S. Sara Mahdavi",
+   "Rapha Gontijo Lopes",
+   "Tim Salimans",
+   "Jonathan Ho",
+   "David J Fleet",
+   "Mohammad Norouzi"
+  ],
+  "published": "2022-05-23"
+ },
+ "1312.6114": {
+  "title": "Auto-Encoding Variational Bayes",
+  "authors": [
+   "Diederik P Kingma",
+   "Max Welling"
+  ],
+  "published": "2013-12-20"
+ },
+ "2006.11239": {
+  "title": "Denoising Diffusion Probabilistic Models",
+  "authors": [
+   "Jonathan Ho",
+   "Ajay Jain",
+   "Pieter Abbeel"
+  ],
+  "published": "2020-06-19"
+ },
+ "2011.13456": {
+  "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+  "authors": [
+   "Yang Song",
+   "Jascha Sohl-Dickstein",
+   "Diederik P. Kingma",
+   "Abhishek Kumar",
+   "Stefano Ermon",
+   "Ben Poole"
+  ],
+  "published": "2020-11-26"
+ },
+ "2202.00512": {
+  "title": "Progressive Distillation for Fast Sampling of Diffusion Models",
+  "authors": [
+   "Tim Salimans",
+   "Jonathan Ho"
+  ],
+  "published": "2022-02-01"
+ },
+ "2112.10752": {
+  "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+  "authors": [
+   "Robin Rombach",
+   "Andreas Blattmann",
+   "Dominik Lorenz",
+   "Patrick Esser",
+   "Bj\u00f6rn Ommer"
+  ],
+  "published": "2021-12-20"
+ },
+ "2207.12598": {
+  "title": "Classifier-Free Diffusion Guidance",
+  "authors": [
+   "Jonathan Ho",
+   "Tim Salimans"
+  ],
+  "published": "2022-07-26"
+ },
+ "2203.15556": {
+  "title": "Training Compute-Optimal Large Language Models",
+  "authors": [
+   "Jordan Hoffmann",
+   "Sebastian Borgeaud",
+   "Arthur Mensch",
+   "Elena Buchatskaya",
+   "Trevor Cai",
+   "Eliza Rutherford",
+   "Diego de Las Casas",
+   "Lisa Anne Hendricks",
+   "Johannes Welbl",
+   "Aidan Clark",
+   "Tom Hennigan",
+   "Eric Noland",
+   "Katie Millican",
+   "George van den Driessche",
+   "Bogdan Damoc",
+   "Aurelia Guy",
+   "Simon Osindero",
+   "Karen Simonyan",
+   "Erich Elsen",
+   "Jack W. Rae",
+   "Oriol Vinyals",
+   "Laurent Sifre"
+  ],
+  "published": "2022-03-29"
+ },
+ "1503.03585": {
+  "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+  "authors": [
+   "Jascha Sohl-Dickstein",
+   "Eric A. Weiss",
+   "Niru Maheswaranathan",
+   "Surya Ganguli"
+  ],
+  "published": "2015-03-12"
+ },
+ "1706.08500": {
+  "title": "GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium",
+  "authors": [
+   "Martin Heusel",
+   "Hubert Ramsauer",
+   "Thomas Unterthiner",
+   "Bernhard Nessler",
+   "Sepp Hochreiter"
+  ],
+  "published": "2017-06-26"
+ },
+ "2206.00364": {
+  "title": "Elucidating the Design Space of Diffusion-Based Generative Models",
+  "authors": [
+   "Tero Karras",
+   "Miika Aittala",
+   "Timo Aila",
+   "Samuli Laine"
+  ],
+  "published": "2022-06-01"
+ },
+ "1406.2661": {
+  "title": "Generative Adversarial Networks",
+  "authors": [
+   "Ian J. Goodfellow",
+   "Jean Pouget-Abadie",
+   "Mehdi Mirza",
+   "Bing Xu",
+   "David Warde-Farley",
+   "Sherjil Ozair",
+   "Aaron Courville",
+   "Yoshua Bengio"
+  ],
+  "published": "2014-06-10"
+ },
+ "1907.05600": {
+  "title": "Generative Modeling by Estimating Gradients of the Data Distribution",
+  "authors": [
+   "Yang Song",
+   "Stefano Ermon"
+  ],
+  "published": "2019-07-12"
+ },
+ "2111.06377": {
+  "title": "Masked Autoencoders Are Scalable Vision Learners",
+  "authors": [
+   "Kaiming He",
+   "Xinlei Chen",
+   "Saining Xie",
+   "Yanghao Li",
+   "Piotr Doll\u00e1r",
+   "Ross Girshick"
+  ],
+  "published": "2021-11-11"
+ },
+ "2204.06125": {
+  "title": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+  "authors": [
+   "Aditya Ramesh",
+   "Prafulla Dhariwal",
+   "Alex Nichol",
+   "Casey Chu",
+   "Mark Chen"
+  ],
+  "published": "2022-04-13"
+ },
+ "1511.06349": {
+  "title": "Generating Sentences from a Continuous Space",
+  "authors": [
+   "Samuel R. Bowman",
+   "Luke Vilnis",
+   "Oriol Vinyals",
+   "Andrew M. Dai",
+   "Rafal Jozefowicz",
+   "Samy Bengio"
+  ],
+  "published": "2015-11-19"
+ },
+ "1701.07875": {
+  "title": "Wasserstein GAN",
+  "authors": [
+   "Martin Arjovsky",
+   "Soumith Chintala",
+   "L\u00e9on Bottou"
+  ],
+  "published": "2017-01-26"
+ },
+ "1701.05517": {
+  "title": "PixelCNN++: Improving the PixelCNN with Discretized Logistic Mixture Likelihood and Other Modifications",
+  "authors": [
+   "Tim Salimans",
+   "Andrej Karpathy",
+   "Xi Chen",
+   "Diederik P. Kingma"
+  ],
+  "published": "2017-01-19"
+ },
+ "1608.05859": {
+  "title": "Using the Output Embedding to Improve Language Models",
+  "authors": [
+   "Ofir Press",
+   "Lior Wolf"
+  ],
+  "published": "2016-08-20"
+ },
+ "2303.09556": {
+  "title": "Efficient Diffusion Training via Min-SNR Weighting Strategy",
+  "authors": [
+   "Tiankai Hang",
+   "Shuyang Gu",
+   "Chen Li",
+   "Jianmin Bao",
+   "Dong Chen",
+   "Han Hu",
+   "Xin Geng",
+   "Baining Guo"
+  ],
+  "published": "2023-03-16"
+ },
+ "2305.08891": {
+  "title": "Common Diffusion Noise Schedules and Sample Steps are Flawed",
+  "authors": [
+   "Shanchuan Lin",
+   "Bingchen Liu",
+   "Jiashi Li",
+   "Xiao Yang"
+  ],
+  "published": "2023-05-15"
+ },
+ "2002.09797": {
+  "title": "Reliable Fidelity and Diversity Metrics for Generative Models",
+  "authors": [
+   "Muhammad Ferjad Naeem",
+   "Seong Joon Oh",
+   "Youngjung Uh",
+   "Yunjey Choi",
+   "Jaejun Yoo"
+  ],
+  "published": "2020-02-23"
+ },
+ "2010.11929": {
+  "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+  "authors": [
+   "Alexey Dosovitskiy",
+   "Lucas Beyer",
+   "Alexander Kolesnikov",
+   "Dirk Weissenborn",
+   "Xiaohua Zhai",
+   "Thomas Unterthiner",
+   "Mostafa Dehghani",
+   "Matthias Minderer",
+   "Georg Heigold",
+   "Sylvain Gelly",
+   "Jakob Uszkoreit",
+   "Neil Houlsby"
+  ],
+  "published": "2020-10-22"
+ },
+ "1802.05957": {
+  "title": "Spectral Normalization for Generative Adversarial Networks",
+  "authors": [
+   "Takeru Miyato",
+   "Toshiki Kataoka",
+   "Masanori Koyama",
+   "Yuichi Yoshida"
+  ],
+  "published": "2018-02-16"
+ },
+ "1601.06759": {
+  "title": "Pixel Recurrent Neural Networks",
+  "authors": [
+   "Aaron van den Oord",
+   "Nal Kalchbrenner",
+   "Koray Kavukcuoglu"
+  ],
+  "published": "2016-01-25"
+ },
+ "2502.09992": {
+  "title": "Large Language Diffusion Models",
+  "authors": [
+   "Shen Nie",
+   "Fengqi Zhu",
+   "Zebin You",
+   "Xiaolu Zhang",
+   "Jingyang Ou",
+   "Jun Hu",
+   "Jun Zhou",
+   "Yankai Lin",
+   "Ji-Rong Wen",
+   "Chongxuan Li"
+  ],
+  "published": "2025-02-14"
+ },
+ "2407.21783": {
+  "title": "The Llama 3 Herd of Models",
+  "authors": [
+   "Aaron Grattafiori",
+   "Abhimanyu Dubey",
+   "Abhinav Jauhri",
+   "Abhinav Pandey",
+   "Abhishek Kadian",
+   "Ahmad Al-Dahle",
+   "Aiesha Letman",
+   "Akhil Mathur",
+   "Alan Schelten",
+   "Alex Vaughan",
+   "Amy Yang",
+   "Angela Fan",
+   "Anirudh Goyal",
+   "Anthony Hartshorn",
+   "Aobo Yang",
+   "Archi Mitra",
+   "Archie Sravankumar",
+   "Artem Korenev",
+   "Arthur Hinsvark",
+   "Arun Rao",
+   "Aston Zhang",
+   "Aurelien Rodriguez",
+   "Austen Gregerson",
+   "Ava Spataru",
+   "Baptiste Roziere",
+   "Bethany Biron",
+   "Binh Tang",
+   "Bobbie Chern",
+   "Charlotte Caucheteux",
+   "Chaya Nayak",
+   "Chloe Bi",
+   "Chris Marra",
+   "Chris McConnell",
+   "Christian Keller",
+   "Christophe Touret",
+   "Chunyang Wu",
+   "Corinne Wong",
+   "Cristian Canton Ferrer",
+   "Cyrus Nikolaidis",
+   "Damien Allonsius",
+   "Daniel Song",
+   "Danielle Pintz",
+   "Danny Livshits",
+   "Danny Wyatt",
+   "David Esiobu",
+   "Dhruv Choudhary",
+   "Dhruv Mahajan",
+   "Diego Garcia-Olano",
+   "Diego Perino",
+   "Dieuwke Hupkes",
+   "Egor Lakomkin",
+   "Ehab AlBadawy",
+   "Elina Lobanova",
+   "Emily Dinan",
+   "Eric Michael Smith",
+   "Filip Radenovic",
+   "Francisco Guzm\u00e1n",
+   "Frank Zhang",
+   "Gabriel Synnaeve",
+   "Gabrielle Lee",
+   "Georgia Lewis Anderson",
+   "Govind Thattai",
+   "Graeme Nail",
+   "Gregoire Mialon",
+   "Guan Pang",
+   "Guillem Cucurell",
+   "Hailey Nguyen",
+   "Hannah Korevaar",
+   "Hu Xu",
+   "Hugo Touvron",
+   "Iliyan Zarov",
+   "Imanol Arrieta Ibarra",
+   "Isabel Kloumann",
+   "Ishan Misra",
+   "Ivan Evtimov",
+   "Jack Zhang",
+   "Jade Copet",
+   "Jaewon Lee",
+   "Jan Geffert",
+   "Jana Vranes",
+   "Jason Park",
+   "Jay Mahadeokar",
+   "Jeet Shah",
+   "Jelmer van der Linde",
+   "Jennifer Billock",
+   "Jenny Hong",
+   "Jenya Lee",
+   "Jeremy Fu",
+   "Jianfeng Chi",
+   "Jianyu Huang",
+   "Jiawen Liu",
+   "Jie Wang",
+   "Jiecao Yu",
+   "Joanna Bitton",
+   "Joe Spisak",
+   "Jongsoo Park",
+   "Joseph Rocca",
+   "Joshua Johnstun",
+   "Joshua Saxe",
+   "Junteng Jia",
+   "Kalyan Vasuden Alwala",
+   "Karthik Prasad",
+   "Kartikeya Upasani",
+   "Kate Plawiak",
+   "Ke Li",
+   "Kenneth Heafield",
+   "Kevin Stone",
+   "Khalid El-Arini",
+   "Krithika Iyer",
+   "Kshitiz Malik",
+   "Kuenley Chiu",
+   "Kunal Bhalla",
+   "Kushal Lakhotia",
+   "Lauren Rantala-Yeary",
+   "Laurens van der Maaten",
+   "Lawrence Chen",
+   "Liang Tan",
+   "Liz Jenkins",
+   "Louis Martin",
+   "Lovish Madaan",
+   "Lubo Malo",
+   "Lukas Blecher",
+   "Lukas Landzaat",
+   "Luke de Oliveira",
+   "Madeline Muzzi",
+   "Mahesh Pasupuleti",
+   "Mannat Singh",
+   "Manohar Paluri",
+   "Marcin Kardas",
+   "Maria Tsimpoukelli",
+   "Mathew Oldham",
+   "Mathieu Rita",
+   "Maya Pavlova",
+   "Melanie Kambadur",
+   "Mike Lewis",
+   "Min Si",
+   "Mitesh Kumar Singh",
+   "Mona Hassan",
+   "Naman Goyal",
+   "Narjes Torabi",
+   "Nikolay Bashlykov",
+   "Nikolay Bogoychev",
+   "Niladri Chatterji",
+   "Ning Zhang",
+   "Olivier Duchenne",
+   "Onur \u00c7elebi",
+   "Patrick Alrassy",
+   "Pengchuan Zhang",
+   "Pengwei Li",
+   "Petar Vasic",
+   "Peter Weng",
+   "Prajjwal Bhargava",
+   "Pratik Dubal",
+   "Praveen Krishnan",
+   "Punit Singh Koura",
+   "Puxin Xu",
+   "Qing He",
+   "Qingxiao Dong",
+   "Ragavan Srinivasan",
+   "Raj Ganapathy",
+   "Ramon Calderer",
+   "Ricardo Silveira Cabral",
+   "Robert Stojnic",
+   "Roberta Raileanu",
+   "Rohan Maheswari",
+   "Rohit Girdhar",
+   "Rohit Patel",
+   "Romain Sauvestre",
+   "Ronnie Polidoro",
+   "Roshan Sumbaly",
+   "Ross Taylor",
+   "Ruan Silva",
+   "Rui Hou",
+   "Rui Wang",
+   "Saghar Hosseini",
+   "Sahana Chennabasappa",
+   "Sanjay Singh",
+   "Sean Bell",
+   "Seohyun Sonia Kim",
+   "Sergey Edunov",
+   "Shaoliang Nie",
+   "Sharan Narang",
+   "Sharath Raparthy",
+   "Sheng Shen",
+   "Shengye Wan",
+   "Shruti Bhosale",
+   "Shun Zhang",
+   "Simon Vandenhende",
+   "Soumya Batra",
+   "Spencer Whitman",
+   "Sten Sootla",
+   "Stephane Collot",
+   "Suchin Gururangan",
+   "Sydney Borodinsky",
+   "Tamar Herman",
+   "Tara Fowler",
+   "Tarek Sheasha",
+   "Thomas Georgiou",
+   "Thomas Scialom",
+   "Tobias Speckbacher",
+   "Todor Mihaylov",
+   "Tong Xiao",
+   "Ujjwal Karn",
+   "Vedanuj Goswami",
+   "Vibhor Gupta",
+   "Vignesh Ramanathan",
+   "Viktor Kerkez",
+   "Vincent Gonguet",
+   "Virginie Do",
+   "Vish Vogeti",
+   "V\u00edtor Albiero",
+   "Vladan Petrovic",
+   "Weiwei Chu",
+   "Wenhan Xiong",
+   "Wenyin Fu",
+   "Whitney Meers",
+   "Xavier Martinet",
+   "Xiaodong Wang",
+   "Xiaofang Wang",
+   "Xiaoqing Ellen Tan",
+   "Xide Xia",
+   "Xinfeng Xie",
+   "Xuchao Jia",
+   "Xuewei Wang",
+   "Yaelle Goldschlag",
+   "Yashesh Gaur",
+   "Yasmine Babaei",
+   "Yi Wen",
+   "Yiwen Song",
+   "Yuchen Zhang",
+   "Yue Li",
+   "Yuning Mao",
+   "Zacharie Delpierre Coudert",
+   "Zheng Yan",
+   "Zhengxing Chen",
+   "Zoe Papakipos",
+   "Aaditya Singh",
+   "Aayushi Srivastava",
+   "Abha Jain",
+   "Adam Kelsey",
+   "Adam Shajnfeld",
+   "Adithya Gangidi",
+   "Adolfo Victoria",
+   "Ahuva Goldstand",
+   "Ajay Menon",
+   "Ajay Sharma",
+   "Alex Boesenberg",
+   "Alexei Baevski",
+   "Allie Feinstein",
+   "Amanda Kallet",
+   "Amit Sangani",
+   "Amos Teo",
+   "Anam Yunus",
+   "Andrei Lupu",
+   "Andres Alvarado",
+   "Andrew Caples",
+   "Andrew Gu",
+   "Andrew Ho",
+   "Andrew Poulton",
+   "Andrew Ryan",
+   "Ankit Ramchandani",
+   "Annie Dong",
+   "Annie Franco",
+   "Anuj Goyal",
+   "Aparajita Saraf",
+   "Arkabandhu Chowdhury",
+   "Ashley Gabriel",
+   "Ashwin Bharambe",
+   "Assaf Eisenman",
+   "Azadeh Yazdan",
+   "Beau James",
+   "Ben Maurer",
+   "Benjamin Leonhardi",
+   "Bernie Huang",
+   "Beth Loyd",
+   "Beto De Paola",
+   "Bhargavi Paranjape",
+   "Bing Liu",
+   "Bo Wu",
+   "Boyu Ni",
+   "Braden Hancock",
+   "Bram Wasti",
+   "Brandon Spence",
+   "Brani Stojkovic",
+   "Brian Gamido",
+   "Britt Montalvo",
+   "Carl Parker",
+   "Carly Burton",
+   "Catalina Mejia",
+   "Ce Liu",
+   "Changhan Wang",
+   "Changkyu Kim",
+   "Chao Zhou",
+   "Chester Hu",
+   "Ching-Hsiang Chu",
+   "Chris Cai",
+   "Chris Tindal",
+   "Christoph Feichtenhofer",
+   "Cynthia Gao",
+   "Damon Civin",
+   "Dana Beaty",
+   "Daniel Kreymer",
+   "Daniel Li",
+   "David Adkins",
+   "David Xu",
+   "Davide Testuggine",
+   "Delia David",
+   "Devi Parikh",
+   "Diana Liskovich",
+   "Didem Foss",
+   "Dingkang Wang",
+   "Duc Le",
+   "Dustin Holland",
+   "Edward Dowling",
+   "Eissa Jamil",
+   "Elaine Montgomery",
+   "Eleonora Presani",
+   "Emily Hahn",
+   "Emily Wood",
+   "Eric-Tuan Le",
+   "Erik Brinkman",
+   "Esteban Arcaute",
+   "Evan Dunbar",
+   "Evan Smothers",
+   "Fei Sun",
+   "Felix Kreuk",
+   "Feng Tian",
+   "Filippos Kokkinos",
+   "Firat Ozgenel",
+   "Francesco Caggioni",
+   "Frank Kanayet",
+   "Frank Seide",
+   "Gabriela Medina Florez",
+   "Gabriella Schwarz",
+   "Gada Badeer",
+   "Georgia Swee",
+   "Gil Halpern",
+   "Grant Herman",
+   "Grigory Sizov",
+   " Guangyi",
+   " Zhang",
+   "Guna Lakshminarayanan",
+   "Hakan Inan",
+   "Hamid Shojanazeri",
+   "Han Zou",
+   "Hannah Wang",
+   "Hanwen Zha",
+   "Haroun Habeeb",
+   "Harrison Rudolph",
+   "Helen Suk",
+   "Henry Aspegren",
+   "Hunter Goldman",
+   "Hongyuan Zhan",
+   "Ibrahim Damlaj",
+   "Igor Molybog",
+   "Igor Tufanov",
+   "Ilias Leontiadis",
+   "Irina-Elena Veliche",
+   "Itai Gat",
+   "Jake Weissman",
+   "James Geboski",
+   "James Kohli",
+   "Janice Lam",
+   "Japhet Asher",
+   "Jean-Baptiste Gaya",
+   "Jeff Marcus",
+   "Jeff Tang",
+   "Jennifer Chan",
+   "Jenny Zhen",
+   "Jeremy Reizenstein",
+   "Jeremy Teboul",
+   "Jessica Zhong",
+   "Jian Jin",
+   "Jingyi Yang",
+   "Joe Cummings",
+   "Jon Carvill",
+   "Jon Shepard",
+   "Jonathan McPhie",
+   "Jonathan Torres",
+   "Josh Ginsburg",
+   "Junjie Wang",
+   "Kai Wu",
+   "Kam Hou U",
+   "Karan Saxena",
+   "Kartikay Khandelwal",
+   "Katayoun Zand",
+   "Kathy Matosich",
+   "Kaushik Veeraraghavan",
+   "Kelly Michelena",
+   "Keqian Li",
+   "Kiran Jagadeesh",
+   "Kun Huang",
+   "Kunal Chawla",
+   "Kyle Huang",
+   "Lailin Chen",
+   "Lakshya Garg",
+   "Lavender A",
+   "Leandro Silva",
+   "Lee Bell",
+   "Lei Zhang",
+   "Liangpeng Guo",
+   "Licheng Yu",
+   "Liron Moshkovich",
+   "Luca Wehrstedt",
+   "Madian Khabsa",
+   "Manav Avalani",
+   "Manish Bhatt",
+   "Martynas Mankus",
+   "Matan Hasson",
+   "Matthew Lennie",
+   "Matthias Reso",
+   "Maxim Groshev",
+   "Maxim Naumov",
+   "Maya Lathi",
+   "Meghan Keneally",
+   "Miao Liu",
+   "Michael L. Seltzer",
+   "Michal Valko",
+   "Michelle Restrepo",
+   "Mihir Patel",
+   "Mik Vyatskov",
+   "Mikayel Samvelyan",
+   "Mike Clark",
+   "Mike Macey",
+   "Mike Wang",
+   "Miquel Jubert Hermoso",
+   "Mo Metanat",
+   "Mohammad Rastegari",
+   "Munish Bansal",
+   "Nandhini Santhanam",
+   "Natascha Parks",
+   "Natasha White",
+   "Navyata Bawa",
+   "Nayan Singhal",
+   "Nick Egebo",
+   "Nicolas Usunier",
+   "Nikhil Mehta",
+   "Nikolay Pavlovich Laptev",
+   "Ning Dong",
+   "Norman Cheng",
+   "Oleg Chernoguz",
+   "Olivia Hart",
+   "Omkar Salpekar",
+   "Ozlem Kalinli",
+   "Parkin Kent",
+   "Parth Parekh",
+   "Paul Saab",
+   "Pavan Balaji",
+   "Pedro Rittner",
+   "Philip Bontrager",
+   "Pierre Roux",
+   "Piotr Dollar",
+   "Polina Zvyagina",
+   "Prashant Ratanchandani",
+   "Pritish Yuvraj",
+   "Qian Liang",
+   "Rachad Alao",
+   "Rachel Rodriguez",
+   "Rafi Ayub",
+   "Raghotham Murthy",
+   "Raghu Nayani",
+   "Rahul Mitra",
+   "Rangaprabhu Parthasarathy",
+   "Raymond Li",
+   "Rebekkah Hogan",
+   "Robin Battey",
+   "Rocky Wang",
+   "Russ Howes",
+   "Ruty Rinott",
+   "Sachin Mehta",
+   "Sachin Siby",
+   "Sai Jayesh Bondu",
+   "Samyak Datta",
+   "Sara Chugh",
+   "Sara Hunt",
+   "Sargun Dhillon",
+   "Sasha Sidorov",
+   "Satadru Pan",
+   "Saurabh Mahajan",
+   "Saurabh Verma",
+   "Seiji Yamamoto",
+   "Sharadh Ramaswamy",
+   "Shaun Lindsay",
+   "Shaun Lindsay",
+   "Sheng Feng",
+   "Shenghao Lin",
+   "Shengxin Cindy Zha",
+   "Shishir Patil",
+   "Shiva Shankar",
+   "Shuqiang Zhang",
+   "Shuqiang Zhang",
+   "Sinong Wang",
+   "Sneha Agarwal",
+   "Soji Sajuyigbe",
+   "Soumith Chintala",
+   "Stephanie Max",
+   "Stephen Chen",
+   "Steve Kehoe",
+   "Steve Satterfield",
+   "Sudarshan Govindaprasad",
+   "Sumit Gupta",
+   "Summer Deng",
+   "Sungmin Cho",
+   "Sunny Virk",
+   "Suraj Subramanian",
+   "Sy Choudhury",
+   "Sydney Goldman",
+   "Tal Remez",
+   "Tamar Glaser",
+   "Tamara Best",
+   "Thilo Koehler",
+   "Thomas Robinson",
+   "Tianhe Li",
+   "Tianjun Zhang",
+   "Tim Matthews",
+   "Timothy Chou",
+   "Tzook Shaked",
+   "Varun Vontimitta",
+   "Victoria Ajayi",
+   "Victoria Montanez",
+   "Vijai Mohan",
+   "Vinay Satish Kumar",
+   "Vishal Mangla",
+   "Vlad Ionescu",
+   "Vlad Poenaru",
+   "Vlad Tiberiu Mihailescu",
+   "Vladimir Ivanov",
+   "Wei Li",
+   "Wenchen Wang",
+   "Wenwen Jiang",
+   "Wes Bouaziz",
+   "Will Constable",
+   "Xiaocheng Tang",
+   "Xiaojian Wu",
+   "Xiaolan Wang",
+   "Xilun Wu",
+   "Xinbo Gao",
+   "Yaniv Kleinman",
+   "Yanjun Chen",
+   "Ye Hu",
+   "Ye Jia",
+   "Ye Qi",
+   "Yenda Li",
+   "Yilin Zhang",
+   "Ying Zhang",
+   "Yossi Adi",
+   "Youngjin Nam",
+   " Yu",
+   " Wang",
+   "Yu Zhao",
+   "Yuchen Hao",
+   "Yundi Qian",
+   "Yunlu Li",
+   "Yuzi He",
+   "Zach Rait",
+   "Zachary DeVito",
+   "Zef Rosnbrick",
+   "Zhaoduo Wen",
+   "Zhenyu Yang",
+   "Zhiwei Zhao",
+   "Zhiyu Ma"
+  ],
+  "published": "2024-07-31"
+ },
+ "2202.04200": {
+  "title": "MaskGIT: Masked Generative Image Transformer",
+  "authors": [
+   "Huiwen Chang",
+   "Han Zhang",
+   "Lu Jiang",
+   "Ce Liu",
+   "William T. Freeman"
+  ],
+  "published": "2022-02-08"
+ },
+ "2210.02747": {
+  "title": "Flow Matching for Generative Modeling",
+  "authors": [
+   "Yaron Lipman",
+   "Ricky T. Q. Chen",
+   "Heli Ben-Hamu",
+   "Maximilian Nickel",
+   "Matt Le"
+  ],
+  "published": "2022-10-06"
+ },
+ "2209.12152": {
+  "title": "All are Worth Words: A ViT Backbone for Diffusion Models",
+  "authors": [
+   "Fan Bao",
+   "Shen Nie",
+   "Kaiwen Xue",
+   "Yue Cao",
+   "Chongxuan Li",
+   "Hang Su",
+   "Jun Zhu"
+  ],
+  "published": "2022-09-25"
+ },
+ "2209.03003": {
+  "title": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
+  "authors": [
+   "Xingchao Liu",
+   "Chengyue Gong",
+   "Qiang Liu"
+  ],
+  "published": "2022-09-07"
+ },
+ "2406.07524": {
+  "title": "Simple and Effective Masked Diffusion Language Models",
+  "authors": [
+   "Subham Sekhar Sahoo",
+   "Marianne Arriola",
+   "Yair Schiff",
+   "Aaron Gokaslan",
+   "Edgar Marroquin",
+   "Justin T Chiu",
+   "Alexander Rush",
+   "Volodymyr Kuleshov"
+  ],
+  "published": "2024-06-11"
+ },
+ "2106.08254": {
+  "title": "BEiT: BERT Pre-Training of Image Transformers",
+  "authors": [
+   "Hangbo Bao",
+   "Li Dong",
+   "Songhao Piao",
+   "Furu Wei"
+  ],
+  "published": "2021-06-15"
+ },
+ "2401.08740": {
+  "title": "SiT: Exploring Flow and Diffusion-based Generative Models with Scalable Interpolant Transformers",
+  "authors": [
+   "Nanye Ma",
+   "Mark Goldstein",
+   "Michael S. Albergo",
+   "Nicholas M. Boffi",
+   "Eric Vanden-Eijnden",
+   "Saining Xie"
+  ],
+  "published": "2024-01-16"
+ },
+ "2303.14389": {
+  "title": "MDTv2: Masked Diffusion Transformer is a Strong Image Synthesizer",
+  "authors": [
+   "Shanghua Gao",
+   "Pan Zhou",
+   "Ming-Ming Cheng",
+   "Shuicheng Yan"
+  ],
+  "published": "2023-03-25"
+ },
+ "2406.11838": {
+  "title": "Autoregressive Image Generation without Vector Quantization",
+  "authors": [
+   "Tianhong Li",
+   "Yonglong Tian",
+   "He Li",
+   "Mingyang Deng",
+   "Kaiming He"
+  ],
+  "published": "2024-06-17"
+ },
+ "2306.09305": {
+  "title": "Fast Training of Diffusion Models with Masked Transformers",
+  "authors": [
+   "Hongkai Zheng",
+   "Weili Nie",
+   "Arash Vahdat",
+   "Anima Anandkumar"
+  ],
+  "published": "2023-06-15"
+ },
+ "2107.03006": {
+  "title": "Structured Denoising Diffusion Models in Discrete State-Spaces",
+  "authors": [
+   "Jacob Austin",
+   "Daniel D. Johnson",
+   "Jonathan Ho",
+   "Daniel Tarlow",
+   "Rianne van den Berg"
+  ],
+  "published": "2021-07-07"
+ },
+ "1709.07871": {
+  "title": "FiLM: Visual Reasoning with a General Conditioning Layer",
+  "authors": [
+   "Ethan Perez",
+   "Florian Strub",
+   "Harm de Vries",
+   "Vincent Dumoulin",
+   "Aaron Courville"
+  ],
+  "published": "2017-09-22"
+ },
+ "2410.06940": {
+  "title": "Representation Alignment for Generation: Training Diffusion Transformers Is Easier Than You Think",
+  "authors": [
+   "Sihyun Yu",
+   "Sangkyung Kwak",
+   "Huiwon Jang",
+   "Jongheon Jeong",
+   "Jonathan Huang",
+   "Jinwoo Shin",
+   "Saining Xie"
+  ],
+  "published": "2024-10-09"
+ },
+ "2404.02905": {
+  "title": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+  "authors": [
+   "Keyu Tian",
+   "Yi Jiang",
+   "Zehuan Yuan",
+   "Bingyue Peng",
+   "Liwei Wang"
+  ],
+  "published": "2024-04-03"
+ },
+ "2403.03206": {
+  "title": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis",
+  "authors": [
+   "Patrick Esser",
+   "Sumith Kulal",
+   "Andreas Blattmann",
+   "Rahim Entezari",
+   "Jonas M\u00fcller",
+   "Harry Saini",
+   "Yam Levi",
+   "Dominik Lorenz",
+   "Axel Sauer",
+   "Frederic Boesel",
+   "Dustin Podell",
+   "Tim Dockhorn",
+   "Zion English",
+   "Kyle Lacey",
+   "Alex Goodwin",
+   "Yannik Marek",
+   "Robin Rombach"
+  ],
+  "published": "2024-03-05"
+ },
+ "10.1002/j.1538-7305.1948.tb01338.x": {
+  "title": "A Mathematical Theory of Communication",
+  "authors": [
+   "C. E. Shannon"
+  ],
+  "published": "1948",
+  "venue": "Bell System Technical Journal"
+ },
+ "10.1002/j.1538-7305.1951.tb01366.x": {
+  "title": "Prediction and Entropy of Printed English",
+  "authors": [
+   "C. E. Shannon"
+  ],
+  "published": "1951",
+  "venue": "Bell System Technical Journal"
+ },
+ "10.3115/v1/D14-1162": {
+  "title": "Glove: Global Vectors for Word Representation",
+  "authors": [
+   "Jeffrey Pennington",
+   "Richard Socher",
+   "Christopher Manning"
+  ],
+  "published": "2014",
+  "venue": "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+ },
+ "10.1207/s15516709cog1402_1": {
+  "title": "Finding Structure in Time",
+  "authors": [
+   "Jeffrey L. Elman"
+  ],
+  "published": "1990",
+  "venue": "Cognitive Science"
+ },
+ "10.1109/72.279181": {
+  "title": "Learning long-term dependencies with gradient descent is difficult",
+  "authors": [
+   "Y. Bengio",
+   "P. Simard",
+   "P. Frasconi"
+  ],
+  "published": "1994",
+  "venue": "IEEE Transactions on Neural Networks"
+ },
+ "10.1162/neco.1997.9.8.1735": {
+  "title": "Long Short-Term Memory",
+  "authors": [
+   "Sepp Hochreiter",
+   "J\u00fcrgen Schmidhuber"
+  ],
+  "published": "1997",
+  "venue": "Neural Computation"
+ },
+ "10.1162/neco.1991.3.1.79": {
+  "title": "Adaptive Mixtures of Local Experts",
+  "authors": [
+   "Robert A. Jacobs",
+   "Michael I. Jordan",
+   "Steven J. Nowlan",
+   "Geoffrey E. Hinton"
+  ],
+  "published": "1991",
+  "venue": "Neural Computation"
+ }
+}
