@@ -219,3 +219,9 @@ def batches(tokens, batch=64, seed=0):
         perm = torch.randperm(len(data), generator=g)
         for i in range(0, len(data) - batch + 1, batch):
             yield data[perm[i:i + batch]]
+
+
+def scorecard_row(name, res, **extra):
+    """One row for results/scorecard.csv from an evaluate_lm result."""
+    return dict(model=name, family="language", loss=res["loss"], gap=res["gap"], recall_mean=res["recall_mean"],
+                recall_d8=res["recall"][8], recall_d32=res["recall"][32], **extra)

@@ -1,0 +1,7 @@
+notebook,model,family,loss,gap,recall_mean,recall_d8,recall_d32,params,train_seconds,probe_style,probe_topic
+01_ngrams_embeddings,unigram,language,4.184489492370924,1.714112507054835,0.0,0.0,0.0,81.0,,,
+01_ngrams_embeddings,"n-gram, Kneser-Ney, n=3",language,3.132349392064054,0.6619724067479655,0.126,0.138,0.11,,,,
+01_ngrams_embeddings,"n-gram, Kneser-Ney, n=6",language,3.305107920418699,0.8347309351026104,0.2876,0.128,0.138,,,,
+01_ngrams_embeddings,"window neural LM, 4 tokens",language,2.952984094619751,0.48260710930366235,0.2972,0.15,0.13,56433.0,9.493261814117432,,
+01_ngrams_embeddings,"window neural LM, 16 tokens",language,2.738912343978882,0.2685353586627932,0.6344000000000001,1.0,0.144,154737.0,18.271476984024048,,
+01_ngrams_embeddings,"skip-gram embeddings, averaged",language,,,,,,,,0.411,0.999

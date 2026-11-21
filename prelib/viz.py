@@ -139,3 +139,28 @@ def embedding_axes(ax, labels=("PC 1", "PC 2")):
         sp.set_visible(False)
     ax.annotate(labels[0] + " \u2192", (0.02, 0.02), xycoords="axes fraction", fontsize=7, color=GREY)
     ax.annotate(labels[1] + " \u2192", (0.02, 0.07), xycoords="axes fraction", fontsize=7, color=GREY, rotation=90, va="bottom")
+
+
+def doc_colors(tokens):
+    """One colour per token by type: statement words dark, keys blue, values orange, filler words by class tint."""
+    from . import world as W
+    out = []
+    for t in tokens:
+        t = int(t)
+        if t in (W.SET, W.ASK):
+            out.append("#555555")
+        elif W.KEY0 <= t < W.VAL0:
+            out.append(BLUE)
+        elif W.VAL0 <= t < W.FILL0:
+            out.append(ORANGE)
+        elif t >= W.FILL0:
+            out.append(mpl.colors.to_hex(mpl.colors.to_rgba(CYCLE[W.WORD_CLASS[t]], 0.22), keep_alpha=False)
+                       if False else "#EDEDED")
+        else:
+            out.append("#FFFFFF")
+    return out
+
+
+def class_colors():
+    """Colour for each of the six word classes (used wherever classes are shown)."""
+    return CYCLE[:6]
