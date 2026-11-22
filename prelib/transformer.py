@@ -9,6 +9,7 @@ Each keyword swaps one choice for what later models use:
     n_kv_head=1 or 2                 grouped-query attention (fewer key/value heads than query heads)
     moe=dict(n_experts=4, top_k=1)   mixture-of-experts feed-forward layer with a learned router
     causal=False                     every position sees the whole sequence (encoders, notebook 04)
+    tie=True                         share the input embedding with the output layer (notebook 05)
 """
 import math
 import numpy as np
@@ -156,10 +157,10 @@ class Block(nn.Module):
 
 class Transformer(nn.Module):
     def __init__(self, d=64, n_layer=2, n_head=4, block=64, pos="sinusoidal", norm="post", norm_type="layer", ffn="relu",
-                 ffn_mult=4, n_kv_head=None, moe=None, vocab=V, causal=True):
+                 ffn_mult=4, n_kv_head=None, moe=None, vocab=V, causal=True, tie=False):
         super().__init__()
         self.cfg = dict(d=d, n_layer=n_layer, n_head=n_head, block=block, pos=pos, norm=norm, norm_type=norm_type, ffn=ffn,
-                        ffn_mult=ffn_mult, n_kv_head=n_kv_head, moe=moe, vocab=vocab, causal=causal)
+                        ffn_mult=ffn_mult, n_kv_head=n_kv_head, moe=moe, vocab=vocab, causal=causal, tie=tie)
         self.emb = nn.Embedding(vocab, d)
         nn.init.normal_(self.emb.weight, std=0.1)
         if pos == "learned":
@@ -167,6 +168,8 @@ class Transformer(nn.Module):
         self.blocks = nn.ModuleList(Block(self.cfg) for _ in range(n_layer))
         self.final = (RMSNorm if norm_type == "rms" else nn.LayerNorm)(d) if norm == "pre" else nn.Identity()
         self.out = nn.Linear(d, vocab)
+        if tie:                                     # weight tying (Press & Wolf, 2016): one matrix reads tokens in and scores them out
+            self.out.weight = self.emb.weight
 
     def hidden(self, tokens):
         """Final hidden states (B, T, d); position t has seen tokens 0..t."""

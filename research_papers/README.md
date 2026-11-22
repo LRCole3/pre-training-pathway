@@ -76,10 +76,13 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 * Ofir Press, Lior Wolf (2016). **Using the Output Embedding to Improve Language Models**. arXiv:1608.05859. [arxiv.org/abs/1608.05859](https://arxiv.org/abs/1608.05859)
 * Ilya Loshchilov, Frank Hutter (2017). **Decoupled Weight Decay Regularization**. arXiv:1711.05101. [arxiv.org/abs/1711.05101](https://arxiv.org/abs/1711.05101)
 * Taku Kudo, John Richardson (2018). **SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing**. arXiv:1808.06226. [arxiv.org/abs/1808.06226](https://arxiv.org/abs/1808.06226)
+* Jacob Devlin, Ming-Wei Chang, Kenton Lee et al. (2018). **BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding**. arXiv:1810.04805. [arxiv.org/abs/1810.04805](https://arxiv.org/abs/1810.04805)
 * Preetum Nakkiran, Gal Kaplun, Yamini Bansal et al. (2019). **Deep Double Descent: Where Bigger Models and More Data Hurt**. arXiv:1912.02292. [arxiv.org/abs/1912.02292](https://arxiv.org/abs/1912.02292)
 * Jared Kaplan, Sam McCandlish, Tom Henighan et al. (2020). **Scaling Laws for Neural Language Models**. arXiv:2001.08361. [arxiv.org/abs/2001.08361](https://arxiv.org/abs/2001.08361)
+* Tom B. Brown, Benjamin Mann, Nick Ryder et al. (2020). **Language Models are Few-Shot Learners**. arXiv:2005.14165. [arxiv.org/abs/2005.14165](https://arxiv.org/abs/2005.14165)
 * Jordan Hoffmann, Sebastian Borgeaud, Arthur Mensch et al. (2022). **Training Compute-Optimal Large Language Models**. arXiv:2203.15556. [arxiv.org/abs/2203.15556](https://arxiv.org/abs/2203.15556)
 * Shivam Garg, Dimitris Tsipras, Percy Liang et al. (2022). **What Can Transformers Learn In-Context? A Case Study of Simple Function Classes**. arXiv:2208.01066. [arxiv.org/abs/2208.01066](https://arxiv.org/abs/2208.01066)
+* Hugo Touvron, Thibaut Lavril, Gautier Izacard et al. (2023). **LLaMA: Open and Efficient Foundation Language Models**. arXiv:2302.13971. [arxiv.org/abs/2302.13971](https://arxiv.org/abs/2302.13971)
 
 ## Notebook 06 · Generative pretraining for images before diffusion
 
