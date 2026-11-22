@@ -59,6 +59,7 @@ class Attention(nn.Module):
         self.k = nn.Linear(d, self.Hkv * self.hd, bias=False)
         self.v = nn.Linear(d, self.Hkv * self.hd, bias=False)
         self.o = nn.Linear(d, d, bias=False)
+        self.ablate = None                          # set to a head index to remove that head (see notebook 03, section 8)
         if pos == "relative":                       # one learned bias per head and (clipped) distance back
             self.rel = nn.Parameter(torch.zeros(n_head, max_rel + 1)); self.max_rel = max_rel
         if pos == "alibi":                          # fixed, not learned: a different slope per head
@@ -82,7 +83,10 @@ class Attention(nn.Module):
         causal = torch.ones(T, T, dtype=torch.bool).tril()
         w = torch.softmax(s.masked_fill(~causal, float("-inf")), -1)
         self.last_weights = w.detach()              # (B, heads, T, T), kept for plotting
-        return self.o((w @ v).transpose(1, 2).reshape(B, T, -1))
+        out = w @ v                                 # (B, heads, T, head_dim)
+        if self.ablate is not None:                 # experiments only: silence one head by zeroing what it writes
+            out = out.clone(); out[:, self.ablate] = 0
+        return self.o(out.transpose(1, 2).reshape(B, T, -1))
 
 
 class FeedForward(nn.Module):
@@ -122,7 +126,7 @@ class MoE(nn.Module):
         probs = torch.softmax(logits, -1)
         load = (gate > 0).float().mean((0, 1)) / self.top_k               # share of routed tokens per expert
         self.aux = self.balance * self.E * (load.detach() * probs.mean((0, 1))).sum()     # = balance at uniform routing
-        self.last_gate, self.last_load = gate.detach(), load.detach()
+        self.last_gate, self.last_load, self.last_logits = gate.detach(), load.detach(), logits.detach()
         return out
 
 
@@ -170,6 +174,21 @@ class Transformer(nn.Module):
         for blk in self.blocks:
             x = blk(x)
         return self.final(x)
+
+    @torch.no_grad()
+    def residuals(self, tokens):
+        """The residual stream after the embedding and after each block: list of arrays (B, T, d)."""
+        self.eval()
+        tokens = torch.as_tensor(tokens)
+        x = self.emb(tokens)
+        if self.cfg["pos"] == "sinusoidal":
+            x = x + sinusoidal(tokens.shape[1], self.cfg["d"])
+        elif self.cfg["pos"] == "learned":
+            x = x + self.pos_emb(torch.arange(tokens.shape[1]).clamp(max=self.cfg["block"] - 1))
+        out = [x.numpy()]
+        for blk in self.blocks:
+            x = blk(x); out.append(x.numpy())
+        return out
 
     @property
     def aux_loss(self):

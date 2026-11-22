@@ -40,14 +40,18 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 * Biao Zhang, Rico Sennrich (2019). **Root Mean Square Layer Normalization**. arXiv:1910.07467. [arxiv.org/abs/1910.07467](https://arxiv.org/abs/1910.07467)
 * Noam Shazeer (2020). **GLU Variants Improve Transformer**. arXiv:2002.05202. [arxiv.org/abs/2002.05202](https://arxiv.org/abs/2002.05202)
 * Ruibin Xiong, Yunchang Yang, Di He et al. (2020). **On Layer Normalization in the Transformer Architecture**. arXiv:2002.04745. [arxiv.org/abs/2002.04745](https://arxiv.org/abs/2002.04745)
+* Tom B. Brown, Benjamin Mann, Nick Ryder et al. (2020). **Language Models are Few-Shot Learners**. arXiv:2005.14165. [arxiv.org/abs/2005.14165](https://arxiv.org/abs/2005.14165)
 * William Fedus, Barret Zoph, Noam Shazeer (2021). **Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity**. arXiv:2101.03961. [arxiv.org/abs/2101.03961](https://arxiv.org/abs/2101.03961)
 * Jianlin Su, Yu Lu, Shengfeng Pan et al. (2021). **RoFormer: Enhanced Transformer with Rotary Position Embedding**. arXiv:2104.09864. [arxiv.org/abs/2104.09864](https://arxiv.org/abs/2104.09864)
 * Ofir Press, Noah A. Smith, Mike Lewis (2021). **Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation**. arXiv:2108.12409. [arxiv.org/abs/2108.12409](https://arxiv.org/abs/2108.12409)
+* Adi Haviv, Ori Ram, Ofir Press et al. (2022). **Transformer Language Models without Positional Encodings Still Learn Positional Information**. arXiv:2203.16634. [arxiv.org/abs/2203.16634](https://arxiv.org/abs/2203.16634)
 * Tri Dao, Daniel Y. Fu, Stefano Ermon et al. (2022). **FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness**. arXiv:2205.14135. [arxiv.org/abs/2205.14135](https://arxiv.org/abs/2205.14135)
 * Catherine Olsson, Nelson Elhage, Neel Nanda et al. (2022). **In-context Learning and Induction Heads**. arXiv:2209.11895. [arxiv.org/abs/2209.11895](https://arxiv.org/abs/2209.11895)
 * Hugo Touvron, Thibaut Lavril, Gautier Izacard et al. (2023). **LLaMA: Open and Efficient Foundation Language Models**. arXiv:2302.13971. [arxiv.org/abs/2302.13971](https://arxiv.org/abs/2302.13971)
 * Joshua Ainslie, James Lee-Thorp, Michiel de Jong et al. (2023). **GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints**. arXiv:2305.13245. [arxiv.org/abs/2305.13245](https://arxiv.org/abs/2305.13245)
+* Gautam Reddy (2023). **The mechanistic basis of data dependence and abrupt learning in an in-context classification task**. arXiv:2312.03002. [arxiv.org/abs/2312.03002](https://arxiv.org/abs/2312.03002)
 * Albert Q. Jiang, Alexandre Sablayrolles, Antoine Roux et al. (2024). **Mixtral of Experts**. arXiv:2401.04088. [arxiv.org/abs/2401.04088](https://arxiv.org/abs/2401.04088)
+* Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri et al. (2024). **The Llama 3 Herd of Models**. arXiv:2407.21783. [arxiv.org/abs/2407.21783](https://arxiv.org/abs/2407.21783)
 
 ## Notebook 04 · Pretraining objectives and transfer
 
@@ -57,7 +61,6 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 * Colin Raffel, Noam Shazeer, Adam Roberts et al. (2019). **Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer**. arXiv:1910.10683. [arxiv.org/abs/1910.10683](https://arxiv.org/abs/1910.10683)
 * Mike Lewis, Yinhan Liu, Naman Goyal et al. (2019). **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension**. arXiv:1910.13461. [arxiv.org/abs/1910.13461](https://arxiv.org/abs/1910.13461)
 * Kevin Clark, Minh-Thang Luong, Quoc V. Le et al. (2020). **ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators**. arXiv:2003.10555. [arxiv.org/abs/2003.10555](https://arxiv.org/abs/2003.10555)
-* Tom B. Brown, Benjamin Mann, Nick Ryder et al. (2020). **Language Models are Few-Shot Learners**. arXiv:2005.14165. [arxiv.org/abs/2005.14165](https://arxiv.org/abs/2005.14165)
 * Alexander Wettig, Tianyu Gao, Zexuan Zhong et al. (2022). **Should You Mask 15% in Masked Language Modeling?**. arXiv:2202.08005. [arxiv.org/abs/2202.08005](https://arxiv.org/abs/2202.08005)
 
 ## Notebook 05 · Making pretraining scale
@@ -135,5 +138,4 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 * Keyu Tian, Yi Jiang, Zehuan Yuan et al. (2024). **Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction**. arXiv:2404.02905. [arxiv.org/abs/2404.02905](https://arxiv.org/abs/2404.02905)
 * Subham Sekhar Sahoo, Marianne Arriola, Yair Schiff et al. (2024). **Simple and Effective Masked Diffusion Language Models**. arXiv:2406.07524. [arxiv.org/abs/2406.07524](https://arxiv.org/abs/2406.07524)
 * Tianhong Li, Yonglong Tian, He Li et al. (2024). **Autoregressive Image Generation without Vector Quantization**. arXiv:2406.11838. [arxiv.org/abs/2406.11838](https://arxiv.org/abs/2406.11838)
-* Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri et al. (2024). **The Llama 3 Herd of Models**. arXiv:2407.21783. [arxiv.org/abs/2407.21783](https://arxiv.org/abs/2407.21783)
 * Shen Nie, Fengqi Zhu, Zebin You et al. (2025). **Large Language Diffusion Models**. arXiv:2502.09992. [arxiv.org/abs/2502.09992](https://arxiv.org/abs/2502.09992)

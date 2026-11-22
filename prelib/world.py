@@ -237,3 +237,29 @@ def natural_recall(logprob_fn):
     n_bound = (kind == K_BVAL).cumsum(1)
     m = kind == K_QVAL
     return pd.DataFrame(dict(distance=test["dist"][m], bindings=n_bound[m], correct=(pred == tok)[m]))
+
+
+def recall_by_bindings(logprob_fn):
+    """Recall accuracy in ordinary test documents, split by how many bindings were alive (1, 2 or 3)."""
+    nr = natural_recall(logprob_fn)
+    return nr.groupby("bindings").correct.mean().reindex([1, 2, 3])
+
+
+def recall_at(logprob_fn, distance, n=300):
+    """Recall at an arbitrary distance, including distances longer than any training document."""
+    t, pos = recall_set(distance, n=n, length=distance + 8)
+    return float((np.asarray(logprob_fn(t[:, :pos + 1]))[:, pos].argmax(-1) == t[:, pos]).mean())
+
+
+@functools.lru_cache(maxsize=None)
+def long_docs(n=600, length=128):
+    """Documents twice as long as the training documents, with the oracle's probabilities."""
+    return generate(n, seed=77, length=length, oracle=True)
+
+
+def long_gap(logprob_fn, start=DOC_LEN):
+    """Gap to the oracle on positions `start` and later of the long documents: positions never seen in training."""
+    d = long_docs()
+    lp = np.asarray(logprob_fn(d["tokens"]))
+    tl = np.take_along_axis(lp, d["tokens"][..., None], -1)[..., 0]
+    return float((-tl[:, start:]).mean() - (-d["logp_bayes"][:, start:]).mean())

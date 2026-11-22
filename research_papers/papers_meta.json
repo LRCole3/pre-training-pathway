@@ -1769,5 +1769,23 @@
   ],
   "published": "1991",
   "venue": "Neural Computation"
+ },
+ "2312.03002": {
+  "title": "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+  "authors": [
+   "Gautam Reddy"
+  ],
+  "published": "2023-12-03"
+ },
+ "2203.16634": {
+  "title": "Transformer Language Models without Positional Encodings Still Learn Positional Information",
+  "authors": [
+   "Adi Haviv",
+   "Ori Ram",
+   "Ofir Press",
+   "Peter Izsak",
+   "Omer Levy"
+  ],
+  "published": "2022-03-30"
  }
 }

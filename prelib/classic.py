@@ -109,10 +109,12 @@ class WindowMLP(nn.Module):
         return torch.cat([F.log_softmax(self(t[i:i + 500]), -1) for i in range(0, len(t), 500)]).numpy()
 
 
-def train_lm(model, tokens, steps=1500, batch=64, lr=2e-3, seed=0, log_every=0, clip=1.0, callback=None):
-    """Next-token training loop shared by the window model, RNNs and transformers in this series."""
+def train_lm(model, tokens, steps=1500, batch=64, lr=2e-3, seed=0, log_every=0, clip=1.0, callback=None, warmup=0):
+    """Next-token training loop shared by the window model, RNNs and transformers in this series.
+    warmup > 0 raises the learning rate linearly from zero over that many steps. callback(step, model) runs after each step; if it returns True, training stops."""
     set_seed(seed)
     opt = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=0.0)
+    sched = torch.optim.lr_scheduler.LambdaLR(opt, lambda s: min(1.0, (s + 1) / warmup) if warmup else 1.0)
     it = W.batches(tokens, batch, seed)
     losses, t0 = [], time.time()
     model.train()
@@ -120,13 +122,14 @@ def train_lm(model, tokens, steps=1500, batch=64, lr=2e-3, seed=0, log_every=0, 
         x = next(it)
         logits = model(x)
         loss = F.cross_entropy(logits[:, 1:].reshape(-1, V), x[:, 1:].reshape(-1))
-        opt.zero_grad(); loss.backward()
+        total = loss + getattr(model, "aux_loss", 0.0)       # e.g. the load-balancing term of a mixture of experts
+        opt.zero_grad(); total.backward()
         if clip:
             torch.nn.utils.clip_grad_norm_(model.parameters(), clip)
-        opt.step()
+        opt.step(); sched.step()
         losses.append(loss.item())
-        if callback is not None:
-            callback(step, model)
+        if callback is not None and callback(step, model):         # a callback that returns True stops training early
+            break
         if log_every and (step + 1) % log_every == 0:
             print(f"step {step + 1:5d}  loss {np.mean(losses[-log_every:]):.3f}  ({time.time() - t0:.0f}s)")
     return losses
