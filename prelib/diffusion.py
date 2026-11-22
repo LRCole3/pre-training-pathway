@@ -48,6 +48,11 @@ def alpha_bar(schedule="cosine", T=T):
     return ab.float()
 
 
+def no_condition(c):
+    """The 'no condition' input: the label NULL for class labels, the zero vector for vector conditions."""
+    return torch.full_like(c, NULL) if c.dtype == torch.long else torch.zeros_like(c)
+
+
 class Diffusion:
     def __init__(self, schedule="cosine", pred="eps", weighting="uniform", gamma=5.0):
         self.schedule, self.pred, self.weighting, self.gamma = schedule, pred, weighting, gamma
@@ -99,16 +104,18 @@ class Diffusion:
         """Network output with classifier-free guidance: (1 + w) * conditional - w * unconditional."""
         if w == 0:
             return model(x, t, c)
-        oc, ou = model(torch.cat([x, x]), torch.cat([t, t]), torch.cat([c, torch.full_like(c, NULL)])).chunk(2)
+        oc, ou = model(torch.cat([x, x]), torch.cat([t, t]), torch.cat([c, no_condition(c)])).chunk(2)
         return (1 + w) * oc - w * ou
 
     @torch.no_grad()
     def sample(self, model, labels, steps=50, w=0.0, eta=0.0, seed=0, x_T=None, clip=True, record=False):
         """DDIM (Song et al., 2020). eta = 0 is deterministic; eta = 1 with steps = 1000 is the DDPM sampler of Ho et al.
-        Network evaluations per image: steps (twice that with guidance)."""
+        Network evaluations per image: steps (twice that with guidance). clip=True keeps the estimate of the clean
+        image inside [-1, 1]; use clip=False when the model works on latent codes."""
         g = torch.Generator().manual_seed(seed)
         n = len(labels)
-        x = torch.randn(n, 64, generator=g) if x_T is None else x_T.clone()
+        dim = getattr(model, "d_in", 64)
+        x = torch.randn(n, dim, generator=g) if x_T is None else x_T.clone()
         ts = torch.linspace(T - 1, 0, steps).round().long()
         frames = []
         for i, t in enumerate(ts):
@@ -124,7 +131,7 @@ class Diffusion:
                 break
             ab_t, ab_s = self.ab[t], self.ab[ts[i + 1]]
             sigma = eta * ((1 - ab_s) / (1 - ab_t)).sqrt() * (1 - ab_t / ab_s).clamp_min(0).sqrt()
-            x = ab_s.sqrt() * x0 + (1 - ab_s - sigma ** 2).clamp_min(0).sqrt() * eps + sigma * torch.randn(n, 64, generator=g)
+            x = ab_s.sqrt() * x0 + (1 - ab_s - sigma ** 2).clamp_min(0).sqrt() * eps + sigma * torch.randn(n, dim, generator=g)
         return (x, frames) if record else x
 
     @torch.no_grad()
@@ -156,17 +163,19 @@ def timestep_embedding(t, dim=128, max_period=10000):
 
 
 class Denoiser(nn.Module):
-    """Residual MLP: (noisy image, timestep, label) -> prediction with 64 numbers."""
+    """Residual MLP: (noisy input, timestep, condition) -> prediction of the same size as the input.
+    The input has d_in numbers (64 for an image, fewer for a latent code). The condition is a class label, or,
+    with cond_dim set, a vector such as a text embedding (the all-zero vector then means 'no condition')."""
 
-    def __init__(self, width=128, depth=3, time="sinusoidal", n_classes=11):
+    def __init__(self, width=128, depth=3, time="sinusoidal", n_classes=11, d_in=64, cond_dim=None):
         super().__init__()
-        self.time = time
-        self.inp = nn.Linear(64, width)
+        self.time, self.d_in = time, d_in
+        self.inp = nn.Linear(d_in, width)
         self.temb = nn.Sequential(nn.Linear(128 if time == "sinusoidal" else 1, width), nn.SiLU(), nn.Linear(width, width))
-        self.cemb = nn.Embedding(n_classes, width)
+        self.cemb = nn.Embedding(n_classes, width) if cond_dim is None else nn.Linear(cond_dim, width)
         self.blocks = nn.ModuleList(nn.Sequential(nn.LayerNorm(width), nn.Linear(width, width * 2), nn.SiLU(), nn.Linear(width * 2, width)) for _ in range(depth))
         self.mods = nn.ModuleList(nn.Linear(width, width) for _ in range(depth))
-        self.out = nn.Sequential(nn.LayerNorm(width), nn.Linear(width, 64))
+        self.out = nn.Sequential(nn.LayerNorm(width), nn.Linear(width, d_in))
         nn.init.zeros_(self.out[1].weight); nn.init.zeros_(self.out[1].bias)
 
     def forward(self, x, t, c):
@@ -224,7 +233,7 @@ def train(model, diff, X, y, steps=1500, batch=128, lr=2e-3, p_uncond=0.1, ema_d
         model.train()
         idx = torch.randint(0, len(X), (batch,))
         c = y[idx].clone()
-        c[torch.rand(batch) < p_uncond] = NULL
+        c[torch.rand(batch) < p_uncond] = NULL if c.dtype == torch.long else 0.0
         loss = diff.loss(model, X[idx], c)
         opt.zero_grad(); loss.backward(); torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         opt.step(); sched.step(); ema.update(model)
@@ -280,7 +289,7 @@ class EDM:
             ss = torch.full((n,), float(s))
             d = self.denoise(model, x, ss, labels)
             if w:
-                d = (1 + w) * d - w * self.denoise(model, x, ss, torch.full_like(labels, NULL))
+                d = (1 + w) * d - w * self.denoise(model, x, ss, no_condition(labels))
             return d.clamp(-1, 1) if clip else d
 
         for i in range(steps):

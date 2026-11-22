@@ -127,13 +127,17 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 
 ## Notebook 08 · Pretrained parts: encoders, CLIP and latent diffusion
 
+* Aaron van den Oord, Oriol Vinyals, Koray Kavukcuoglu (2017). **Neural Discrete Representation Learning**. arXiv:1711.00937. [arxiv.org/abs/1711.00937](https://arxiv.org/abs/1711.00937)
 * Ting Chen, Simon Kornblith, Mohammad Norouzi et al. (2020). **A Simple Framework for Contrastive Learning of Visual Representations**. arXiv:2002.05709. [arxiv.org/abs/2002.05709](https://arxiv.org/abs/2002.05709)
 * Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov et al. (2020). **An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale**. arXiv:2010.11929. [arxiv.org/abs/2010.11929](https://arxiv.org/abs/2010.11929)
+* Patrick Esser, Robin Rombach, Björn Ommer (2020). **Taming Transformers for High-Resolution Image Synthesis**. arXiv:2012.09841. [arxiv.org/abs/2012.09841](https://arxiv.org/abs/2012.09841)
 * Alec Radford, Jong Wook Kim, Chris Hallacy et al. (2021). **Learning Transferable Visual Models From Natural Language Supervision**. arXiv:2103.00020. [arxiv.org/abs/2103.00020](https://arxiv.org/abs/2103.00020)
 * Kaiming He, Xinlei Chen, Saining Xie et al. (2021). **Masked Autoencoders Are Scalable Vision Learners**. arXiv:2111.06377. [arxiv.org/abs/2111.06377](https://arxiv.org/abs/2111.06377)
+* Robin Rombach, Andreas Blattmann, Dominik Lorenz et al. (2021). **High-Resolution Image Synthesis with Latent Diffusion Models**. arXiv:2112.10752. [arxiv.org/abs/2112.10752](https://arxiv.org/abs/2112.10752)
 * Aditya Ramesh, Prafulla Dhariwal, Alex Nichol et al. (2022). **Hierarchical Text-Conditional Image Generation with CLIP Latents**. arXiv:2204.06125. [arxiv.org/abs/2204.06125](https://arxiv.org/abs/2204.06125)
 * Chitwan Saharia, William Chan, Saurabh Saxena et al. (2022). **Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding**. arXiv:2205.11487. [arxiv.org/abs/2205.11487](https://arxiv.org/abs/2205.11487)
 * Xiaohua Zhai, Basil Mustafa, Alexander Kolesnikov et al. (2023). **Sigmoid Loss for Language Image Pre-Training**. arXiv:2303.15343. [arxiv.org/abs/2303.15343](https://arxiv.org/abs/2303.15343)
+* Patrick Esser, Sumith Kulal, Andreas Blattmann et al. (2024). **Scaling Rectified Flow Transformers for High-Resolution Image Synthesis**. arXiv:2403.03206. [arxiv.org/abs/2403.03206](https://arxiv.org/abs/2403.03206)
 
 ## Notebook 09 · Pretraining diffusion transformers
 
