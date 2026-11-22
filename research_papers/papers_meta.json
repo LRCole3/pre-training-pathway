@@ -1796,5 +1796,48 @@
    "Matthias Bethge"
   ],
   "published": "2015-11-05"
+ },
+ "2310.02557": {
+  "title": "Generalization in diffusion models arises from geometry-adaptive harmonic representations",
+  "authors": [
+   "Zahra Kadkhodaie",
+   "Florentin Guth",
+   "Eero P. Simoncelli",
+   "St\u00e9phane Mallat"
+  ],
+  "published": "2023-10-04"
+ },
+ "2301.13188": {
+  "title": "Extracting Training Data from Diffusion Models",
+  "authors": [
+   "Nicholas Carlini",
+   "Jamie Hayes",
+   "Milad Nasr",
+   "Matthew Jagielski",
+   "Vikash Sehwag",
+   "Florian Tram\u00e8r",
+   "Borja Balle",
+   "Daphne Ippolito",
+   "Eric Wallace"
+  ],
+  "published": "2023-01-30"
+ },
+ "2502.13129": {
+  "title": "Is Noise Conditioning Necessary for Denoising Generative Models?",
+  "authors": [
+   "Qiao Sun",
+   "Zhicheng Jiang",
+   "Hanhong Zhao",
+   "Kaiming He"
+  ],
+  "published": "2025-02-18"
+ },
+ "2511.13720": {
+  "title": "Back to Basics: Let Denoising Generative Models Denoise",
+  "authors": [
+   "Tianhong Li",
+   "Kaiming He"
+  ],
+  "published": "2025-11-17"
  }
 }

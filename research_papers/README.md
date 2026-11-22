@@ -108,15 +108,22 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 
 * Jascha Sohl-Dickstein, Eric A. Weiss, Niru Maheswaranathan et al. (2015). **Deep Unsupervised Learning using Nonequilibrium Thermodynamics**. arXiv:1503.03585. [arxiv.org/abs/1503.03585](https://arxiv.org/abs/1503.03585)
 * Yang Song, Stefano Ermon (2019). **Generative Modeling by Estimating Gradients of the Data Distribution**. arXiv:1907.05600. [arxiv.org/abs/1907.05600](https://arxiv.org/abs/1907.05600)
+* Jonathan Ho, Ajay Jain, Pieter Abbeel (2020). **Denoising Diffusion Probabilistic Models**. arXiv:2006.11239. [arxiv.org/abs/2006.11239](https://arxiv.org/abs/2006.11239)
 * Jiaming Song, Chenlin Meng, Stefano Ermon (2020). **Denoising Diffusion Implicit Models**. arXiv:2010.02502. [arxiv.org/abs/2010.02502](https://arxiv.org/abs/2010.02502)
 * Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma et al. (2020). **Score-Based Generative Modeling through Stochastic Differential Equations**. arXiv:2011.13456. [arxiv.org/abs/2011.13456](https://arxiv.org/abs/2011.13456)
 * Alex Nichol, Prafulla Dhariwal (2021). **Improved Denoising Diffusion Probabilistic Models**. arXiv:2102.09672. [arxiv.org/abs/2102.09672](https://arxiv.org/abs/2102.09672)
 * Diederik P. Kingma, Tim Salimans, Ben Poole et al. (2021). **Variational Diffusion Models**. arXiv:2107.00630. [arxiv.org/abs/2107.00630](https://arxiv.org/abs/2107.00630)
+* Robin Rombach, Andreas Blattmann, Dominik Lorenz et al. (2021). **High-Resolution Image Synthesis with Latent Diffusion Models**. arXiv:2112.10752. [arxiv.org/abs/2112.10752](https://arxiv.org/abs/2112.10752)
 * Tim Salimans, Jonathan Ho (2022). **Progressive Distillation for Fast Sampling of Diffusion Models**. arXiv:2202.00512. [arxiv.org/abs/2202.00512](https://arxiv.org/abs/2202.00512)
 * Tero Karras, Miika Aittala, Timo Aila et al. (2022). **Elucidating the Design Space of Diffusion-Based Generative Models**. arXiv:2206.00364. [arxiv.org/abs/2206.00364](https://arxiv.org/abs/2206.00364)
 * Jonathan Ho, Tim Salimans (2022). **Classifier-Free Diffusion Guidance**. arXiv:2207.12598. [arxiv.org/abs/2207.12598](https://arxiv.org/abs/2207.12598)
+* Nicholas Carlini, Jamie Hayes, Milad Nasr et al. (2023). **Extracting Training Data from Diffusion Models**. arXiv:2301.13188. [arxiv.org/abs/2301.13188](https://arxiv.org/abs/2301.13188)
 * Tiankai Hang, Shuyang Gu, Chen Li et al. (2023). **Efficient Diffusion Training via Min-SNR Weighting Strategy**. arXiv:2303.09556. [arxiv.org/abs/2303.09556](https://arxiv.org/abs/2303.09556)
 * Shanchuan Lin, Bingchen Liu, Jiashi Li et al. (2023). **Common Diffusion Noise Schedules and Sample Steps are Flawed**. arXiv:2305.08891. [arxiv.org/abs/2305.08891](https://arxiv.org/abs/2305.08891)
+* Zahra Kadkhodaie, Florentin Guth, Eero P. Simoncelli et al. (2023). **Generalization in diffusion models arises from geometry-adaptive harmonic representations**. arXiv:2310.02557. [arxiv.org/abs/2310.02557](https://arxiv.org/abs/2310.02557)
+* Patrick Esser, Sumith Kulal, Andreas Blattmann et al. (2024). **Scaling Rectified Flow Transformers for High-Resolution Image Synthesis**. arXiv:2403.03206. [arxiv.org/abs/2403.03206](https://arxiv.org/abs/2403.03206)
+* Qiao Sun, Zhicheng Jiang, Hanhong Zhao et al. (2025). **Is Noise Conditioning Necessary for Denoising Generative Models?**. arXiv:2502.13129. [arxiv.org/abs/2502.13129](https://arxiv.org/abs/2502.13129)
+* Tianhong Li, Kaiming He (2025). **Back to Basics: Let Denoising Generative Models Denoise**. arXiv:2511.13720. [arxiv.org/abs/2511.13720](https://arxiv.org/abs/2511.13720)
 
 ## Notebook 08 · Pretrained parts: encoders, CLIP and latent diffusion
 
@@ -138,7 +145,6 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 * Shanghua Gao, Pan Zhou, Ming-Ming Cheng et al. (2023). **MDTv2: Masked Diffusion Transformer is a Strong Image Synthesizer**. arXiv:2303.14389. [arxiv.org/abs/2303.14389](https://arxiv.org/abs/2303.14389)
 * Hongkai Zheng, Weili Nie, Arash Vahdat et al. (2023). **Fast Training of Diffusion Models with Masked Transformers**. arXiv:2306.09305. [arxiv.org/abs/2306.09305](https://arxiv.org/abs/2306.09305)
 * Nanye Ma, Mark Goldstein, Michael S. Albergo et al. (2024). **SiT: Exploring Flow and Diffusion-based Generative Models with Scalable Interpolant Transformers**. arXiv:2401.08740. [arxiv.org/abs/2401.08740](https://arxiv.org/abs/2401.08740)
-* Patrick Esser, Sumith Kulal, Andreas Blattmann et al. (2024). **Scaling Rectified Flow Transformers for High-Resolution Image Synthesis**. arXiv:2403.03206. [arxiv.org/abs/2403.03206](https://arxiv.org/abs/2403.03206)
 * Sihyun Yu, Sangkyung Kwak, Huiwon Jang et al. (2024). **Representation Alignment for Generation: Training Diffusion Transformers Is Easier Than You Think**. arXiv:2410.06940. [arxiv.org/abs/2410.06940](https://arxiv.org/abs/2410.06940)
 
 ## Notebook 10 · Capstone: one architecture, three objectives, the landscape
