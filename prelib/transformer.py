@@ -8,6 +8,7 @@ Each keyword swaps one choice for what later models use:
     ffn="gelu" | "swiglu"
     n_kv_head=1 or 2                 grouped-query attention (fewer key/value heads than query heads)
     moe=dict(n_experts=4, top_k=1)   mixture-of-experts feed-forward layer with a learned router
+    causal=False                     every position sees the whole sequence (encoders, notebook 04)
 """
 import math
 import numpy as np
@@ -51,17 +52,18 @@ def rope_rotate(x, base=10000.0):
 
 
 class Attention(nn.Module):
-    def __init__(self, d, n_head, n_kv_head=None, pos="sinusoidal", max_rel=32):
+    def __init__(self, d, n_head, n_kv_head=None, pos="sinusoidal", max_rel=32, causal=True):
         super().__init__()
-        self.H, self.Hkv, self.hd, self.pos = n_head, n_kv_head or n_head, d // n_head, pos
+        self.H, self.Hkv, self.hd, self.pos, self.causal = n_head, n_kv_head or n_head, d // n_head, pos, causal
         assert n_head % self.Hkv == 0
         self.q = nn.Linear(d, d, bias=False)
         self.k = nn.Linear(d, self.Hkv * self.hd, bias=False)
         self.v = nn.Linear(d, self.Hkv * self.hd, bias=False)
         self.o = nn.Linear(d, d, bias=False)
         self.ablate = None                          # set to a head index to remove that head (see notebook 03, section 8)
-        if pos == "relative":                       # one learned bias per head and (clipped) distance back
-            self.rel = nn.Parameter(torch.zeros(n_head, max_rel + 1)); self.max_rel = max_rel
+        if pos == "relative":                       # one learned bias per head and (clipped) distance back;
+            self.max_rel = max_rel                  # a bidirectional model also needs entries for "ahead"
+            self.rel = nn.Parameter(torch.zeros(n_head, max_rel + 1 if causal else 2 * max_rel + 1))
         if pos == "alibi":                          # fixed, not learned: a different slope per head
             self.register_buffer("slopes", torch.tensor([2 ** (-8 * (h + 1) / n_head) for h in range(n_head)]))
 
@@ -75,13 +77,16 @@ class Attention(nn.Module):
         if self.Hkv != self.H:                      # each key/value head is shared by a group of query heads
             k = k.repeat_interleave(self.H // self.Hkv, 1); v = v.repeat_interleave(self.H // self.Hkv, 1)
         s = q @ k.transpose(-1, -2) / math.sqrt(self.hd)
-        back = (torch.arange(T)[:, None] - torch.arange(T)[None]).clamp(min=0)             # i - j for j <= i
-        if self.pos == "relative":
+        back = (torch.arange(T)[:, None] - torch.arange(T)[None]).abs()                    # distance between positions i and j
+        if self.pos == "relative" and self.causal:
             s = s + self.rel[:, back.clamp(max=self.max_rel)]
+        elif self.pos == "relative":                # signed offset i - j, clipped, shifted to index from 0
+            s = s + self.rel[:, (torch.arange(T)[:, None] - torch.arange(T)[None]).clamp(-self.max_rel, self.max_rel) + self.max_rel]
         if self.pos == "alibi":
             s = s - self.slopes[:, None, None] * back
-        causal = torch.ones(T, T, dtype=torch.bool).tril()
-        w = torch.softmax(s.masked_fill(~causal, float("-inf")), -1)
+        if self.causal:                             # a language model must not see the tokens it is asked to predict
+            s = s.masked_fill(~torch.ones(T, T, dtype=torch.bool).tril(), float("-inf"))
+        w = torch.softmax(s, -1)
         self.last_weights = w.detach()              # (B, heads, T, T), kept for plotting
         out = w @ v                                 # (B, heads, T, head_dim)
         if self.ablate is not None:                 # experiments only: silence one head by zeroing what it writes
@@ -137,7 +142,7 @@ class Block(nn.Module):
         Norm = RMSNorm if cfg["norm_type"] == "rms" else nn.LayerNorm
         self.pre = cfg["norm"] == "pre"
         self.n1, self.n2 = Norm(d), Norm(d)
-        self.attn = Attention(d, cfg["n_head"], cfg["n_kv_head"], cfg["pos"])
+        self.attn = Attention(d, cfg["n_head"], cfg["n_kv_head"], cfg["pos"], causal=cfg.get("causal", True))
         hidden = cfg["ffn_mult"] * d
         self.ffn = MoE(d, hidden, kind=cfg["ffn"], **cfg["moe"]) if cfg["moe"] else FeedForward(d, hidden, cfg["ffn"])
 
@@ -151,10 +156,10 @@ class Block(nn.Module):
 
 class Transformer(nn.Module):
     def __init__(self, d=64, n_layer=2, n_head=4, block=64, pos="sinusoidal", norm="post", norm_type="layer", ffn="relu",
-                 ffn_mult=4, n_kv_head=None, moe=None, vocab=V):
+                 ffn_mult=4, n_kv_head=None, moe=None, vocab=V, causal=True):
         super().__init__()
         self.cfg = dict(d=d, n_layer=n_layer, n_head=n_head, block=block, pos=pos, norm=norm, norm_type=norm_type, ffn=ffn,
-                        ffn_mult=ffn_mult, n_kv_head=n_kv_head, moe=moe, vocab=vocab)
+                        ffn_mult=ffn_mult, n_kv_head=n_kv_head, moe=moe, vocab=vocab, causal=causal)
         self.emb = nn.Embedding(vocab, d)
         nn.init.normal_(self.emb.weight, std=0.1)
         if pos == "learned":
@@ -193,6 +198,10 @@ class Transformer(nn.Module):
     @property
     def aux_loss(self):
         return sum(b.ffn.aux for b in self.blocks) if self.cfg["moe"] else 0.0
+
+    def token_logits(self, tokens):
+        """Logits for the token AT each position (no shift): used by masked-language-model training (notebook 04)."""
+        return self.out(self.hidden(tokens))
 
     def forward(self, tokens):
         logits = self.out(self.hidden(tokens))                                 # position t predicts token t+1

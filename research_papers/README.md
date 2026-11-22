@@ -55,12 +55,17 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 
 ## Notebook 04 · Pretraining objectives and transfer
 
+* Jeremy Howard, Sebastian Ruder (2018). **Universal Language Model Fine-tuning for Text Classification**. arXiv:1801.06146. [arxiv.org/abs/1801.06146](https://arxiv.org/abs/1801.06146)
+* Matthew E. Peters, Mark Neumann, Mohit Iyyer et al. (2018). **Deep contextualized word representations**. arXiv:1802.05365. [arxiv.org/abs/1802.05365](https://arxiv.org/abs/1802.05365)
+* Peter Shaw, Jakob Uszkoreit, Ashish Vaswani (2018). **Self-Attention with Relative Position Representations**. arXiv:1803.02155. [arxiv.org/abs/1803.02155](https://arxiv.org/abs/1803.02155)
 * Jacob Devlin, Ming-Wei Chang, Kenton Lee et al. (2018). **BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding**. arXiv:1810.04805. [arxiv.org/abs/1810.04805](https://arxiv.org/abs/1810.04805)
 * Mandar Joshi, Danqi Chen, Yinhan Liu et al. (2019). **SpanBERT: Improving Pre-training by Representing and Predicting Spans**. arXiv:1907.10529. [arxiv.org/abs/1907.10529](https://arxiv.org/abs/1907.10529)
 * Yinhan Liu, Myle Ott, Naman Goyal et al. (2019). **RoBERTa: A Robustly Optimized BERT Pretraining Approach**. arXiv:1907.11692. [arxiv.org/abs/1907.11692](https://arxiv.org/abs/1907.11692)
 * Colin Raffel, Noam Shazeer, Adam Roberts et al. (2019). **Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer**. arXiv:1910.10683. [arxiv.org/abs/1910.10683](https://arxiv.org/abs/1910.10683)
 * Mike Lewis, Yinhan Liu, Naman Goyal et al. (2019). **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension**. arXiv:1910.13461. [arxiv.org/abs/1910.13461](https://arxiv.org/abs/1910.13461)
 * Kevin Clark, Minh-Thang Luong, Quoc V. Le et al. (2020). **ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators**. arXiv:2003.10555. [arxiv.org/abs/2003.10555](https://arxiv.org/abs/2003.10555)
+* Tom B. Brown, Benjamin Mann, Nick Ryder et al. (2020). **Language Models are Few-Shot Learners**. arXiv:2005.14165. [arxiv.org/abs/2005.14165](https://arxiv.org/abs/2005.14165)
+* Jianlin Su, Yu Lu, Shengfeng Pan et al. (2021). **RoFormer: Enhanced Transformer with Rotary Position Embedding**. arXiv:2104.09864. [arxiv.org/abs/2104.09864](https://arxiv.org/abs/2104.09864)
 * Alexander Wettig, Tianyu Gao, Zexuan Zhong et al. (2022). **Should You Mask 15% in Masked Language Modeling?**. arXiv:2202.08005. [arxiv.org/abs/2202.08005](https://arxiv.org/abs/2202.08005)
 
 ## Notebook 05 · Making pretraining scale
