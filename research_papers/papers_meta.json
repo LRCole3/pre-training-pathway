@@ -1839,5 +1839,18 @@
    "Kaiming He"
   ],
   "published": "2025-11-17"
+ },
+ "2402.12376": {
+  "title": "FiT: Flexible Vision Transformer for Diffusion Model",
+  "authors": [
+   "Zeyu Lu",
+   "Zidong Wang",
+   "Di Huang",
+   "Chengyue Wu",
+   "Xihui Liu",
+   "Wanli Ouyang",
+   "Lei Bai"
+  ],
+  "published": "2024-02-19"
  }
 }

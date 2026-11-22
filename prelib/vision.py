@@ -180,6 +180,25 @@ def train_contrastive(vit, X, steps=1500, batch=128, lr=2e-3, temperature=0.2, h
     return dict(losses=np.array(losses), seconds=time.time() - t0)
 
 
+def get_vision_encoder(verbose=True):
+    """The contrastive encoder of notebook 08, frozen. Loaded from checkpoints/vision_encoder.pt, or trained
+    with the same settings (about 40 s) if that notebook has not been run."""
+    import os
+    from . import CKPT_DIR
+    path = os.path.join(CKPT_DIR, "vision_encoder.pt")
+    vit = ViT()
+    if os.path.exists(path):
+        vit.load_state_dict(torch.load(path, weights_only=True)["state"])
+    else:
+        if verbose:
+            print("checkpoints/vision_encoder.pt not found: training the contrastive encoder of notebook 08 (about 40 s)")
+        X = images.load_digits_tensor()[0]
+        set_seed(0); vit = ViT(); train_contrastive(vit, X)
+        os.makedirs(CKPT_DIR, exist_ok=True)
+        torch.save(dict(state=vit.state_dict(), config=dict(d=64, depth=3, patch=2)), path)
+    return vit.eval().requires_grad_(False)
+
+
 def train_supervised(vit, X, y, steps=300, batch=64, lr=2e-3, seed=0):
     """The same encoder trained from scratch on labels only (the baseline that pretraining has to beat)."""
     set_seed(seed)

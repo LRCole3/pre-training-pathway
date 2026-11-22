@@ -142,6 +142,9 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 ## Notebook 09 · Pretraining diffusion transformers
 
 * Ethan Perez, Florian Strub, Harm de Vries et al. (2017). **FiLM: Visual Reasoning with a General Conditioning Layer**. arXiv:1709.07871. [arxiv.org/abs/1709.07871](https://arxiv.org/abs/1709.07871)
+* Jonathan Ho, Ajay Jain, Pieter Abbeel (2020). **Denoising Diffusion Probabilistic Models**. arXiv:2006.11239. [arxiv.org/abs/2006.11239](https://arxiv.org/abs/2006.11239)
+* Jianlin Su, Yu Lu, Shengfeng Pan et al. (2021). **RoFormer: Enhanced Transformer with Rotary Position Embedding**. arXiv:2104.09864. [arxiv.org/abs/2104.09864](https://arxiv.org/abs/2104.09864)
+* Robin Rombach, Andreas Blattmann, Dominik Lorenz et al. (2021). **High-Resolution Image Synthesis with Latent Diffusion Models**. arXiv:2112.10752. [arxiv.org/abs/2112.10752](https://arxiv.org/abs/2112.10752)
 * Xingchao Liu, Chengyue Gong, Qiang Liu (2022). **Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow**. arXiv:2209.03003. [arxiv.org/abs/2209.03003](https://arxiv.org/abs/2209.03003)
 * Fan Bao, Shen Nie, Kaiwen Xue et al. (2022). **All are Worth Words: A ViT Backbone for Diffusion Models**. arXiv:2209.12152. [arxiv.org/abs/2209.12152](https://arxiv.org/abs/2209.12152)
 * Yaron Lipman, Ricky T. Q. Chen, Heli Ben-Hamu et al. (2022). **Flow Matching for Generative Modeling**. arXiv:2210.02747. [arxiv.org/abs/2210.02747](https://arxiv.org/abs/2210.02747)
@@ -149,6 +152,8 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 * Shanghua Gao, Pan Zhou, Ming-Ming Cheng et al. (2023). **MDTv2: Masked Diffusion Transformer is a Strong Image Synthesizer**. arXiv:2303.14389. [arxiv.org/abs/2303.14389](https://arxiv.org/abs/2303.14389)
 * Hongkai Zheng, Weili Nie, Arash Vahdat et al. (2023). **Fast Training of Diffusion Models with Masked Transformers**. arXiv:2306.09305. [arxiv.org/abs/2306.09305](https://arxiv.org/abs/2306.09305)
 * Nanye Ma, Mark Goldstein, Michael S. Albergo et al. (2024). **SiT: Exploring Flow and Diffusion-based Generative Models with Scalable Interpolant Transformers**. arXiv:2401.08740. [arxiv.org/abs/2401.08740](https://arxiv.org/abs/2401.08740)
+* Zeyu Lu, Zidong Wang, Di Huang et al. (2024). **FiT: Flexible Vision Transformer for Diffusion Model**. arXiv:2402.12376. [arxiv.org/abs/2402.12376](https://arxiv.org/abs/2402.12376)
+* Patrick Esser, Sumith Kulal, Andreas Blattmann et al. (2024). **Scaling Rectified Flow Transformers for High-Resolution Image Synthesis**. arXiv:2403.03206. [arxiv.org/abs/2403.03206](https://arxiv.org/abs/2403.03206)
 * Sihyun Yu, Sangkyung Kwak, Huiwon Jang et al. (2024). **Representation Alignment for Generation: Training Diffusion Transformers Is Easier Than You Think**. arXiv:2410.06940. [arxiv.org/abs/2410.06940](https://arxiv.org/abs/2410.06940)
 
 ## Notebook 10 · Capstone: one architecture, three objectives, the landscape
