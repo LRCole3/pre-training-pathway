@@ -88,20 +88,26 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 
 * Diederik P Kingma, Max Welling (2013). **Auto-Encoding Variational Bayes**. arXiv:1312.6114. [arxiv.org/abs/1312.6114](https://arxiv.org/abs/1312.6114)
 * Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza et al. (2014). **Generative Adversarial Networks**. arXiv:1406.2661. [arxiv.org/abs/1406.2661](https://arxiv.org/abs/1406.2661)
+* Lucas Theis, Aäron van den Oord, Matthias Bethge (2015). **A note on the evaluation of generative models**. arXiv:1511.01844. [arxiv.org/abs/1511.01844](https://arxiv.org/abs/1511.01844)
 * Samuel R. Bowman, Luke Vilnis, Oriol Vinyals et al. (2015). **Generating Sentences from a Continuous Space**. arXiv:1511.06349. [arxiv.org/abs/1511.06349](https://arxiv.org/abs/1511.06349)
 * Aaron van den Oord, Nal Kalchbrenner, Koray Kavukcuoglu (2016). **Pixel Recurrent Neural Networks**. arXiv:1601.06759. [arxiv.org/abs/1601.06759](https://arxiv.org/abs/1601.06759)
 * Tim Salimans, Andrej Karpathy, Xi Chen et al. (2017). **PixelCNN++: Improving the PixelCNN with Discretized Logistic Mixture Likelihood and Other Modifications**. arXiv:1701.05517. [arxiv.org/abs/1701.05517](https://arxiv.org/abs/1701.05517)
 * Martin Arjovsky, Soumith Chintala, Léon Bottou (2017). **Wasserstein GAN**. arXiv:1701.07875. [arxiv.org/abs/1701.07875](https://arxiv.org/abs/1701.07875)
 * Ishaan Gulrajani, Faruk Ahmed, Martin Arjovsky et al. (2017). **Improved Training of Wasserstein GANs**. arXiv:1704.00028. [arxiv.org/abs/1704.00028](https://arxiv.org/abs/1704.00028)
 * Martin Heusel, Hubert Ramsauer, Thomas Unterthiner et al. (2017). **GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium**. arXiv:1706.08500. [arxiv.org/abs/1706.08500](https://arxiv.org/abs/1706.08500)
+* Aaron van den Oord, Oriol Vinyals, Koray Kavukcuoglu (2017). **Neural Discrete Representation Learning**. arXiv:1711.00937. [arxiv.org/abs/1711.00937](https://arxiv.org/abs/1711.00937)
 * Takeru Miyato, Toshiki Kataoka, Masanori Koyama et al. (2018). **Spectral Normalization for Generative Adversarial Networks**. arXiv:1802.05957. [arxiv.org/abs/1802.05957](https://arxiv.org/abs/1802.05957)
 * Muhammad Ferjad Naeem, Seong Joon Oh, Youngjung Uh et al. (2020). **Reliable Fidelity and Diversity Metrics for Generative Models**. arXiv:2002.09797. [arxiv.org/abs/2002.09797](https://arxiv.org/abs/2002.09797)
+* Jonathan Ho, Ajay Jain, Pieter Abbeel (2020). **Denoising Diffusion Probabilistic Models**. arXiv:2006.11239. [arxiv.org/abs/2006.11239](https://arxiv.org/abs/2006.11239)
+* Patrick Esser, Robin Rombach, Björn Ommer (2020). **Taming Transformers for High-Resolution Image Synthesis**. arXiv:2012.09841. [arxiv.org/abs/2012.09841](https://arxiv.org/abs/2012.09841)
+* Robin Rombach, Andreas Blattmann, Dominik Lorenz et al. (2021). **High-Resolution Image Synthesis with Latent Diffusion Models**. arXiv:2112.10752. [arxiv.org/abs/2112.10752](https://arxiv.org/abs/2112.10752)
+* Keyu Tian, Yi Jiang, Zehuan Yuan et al. (2024). **Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction**. arXiv:2404.02905. [arxiv.org/abs/2404.02905](https://arxiv.org/abs/2404.02905)
+* Tianhong Li, Yonglong Tian, He Li et al. (2024). **Autoregressive Image Generation without Vector Quantization**. arXiv:2406.11838. [arxiv.org/abs/2406.11838](https://arxiv.org/abs/2406.11838)
 
 ## Notebook 07 · The diffusion training design space
 
 * Jascha Sohl-Dickstein, Eric A. Weiss, Niru Maheswaranathan et al. (2015). **Deep Unsupervised Learning using Nonequilibrium Thermodynamics**. arXiv:1503.03585. [arxiv.org/abs/1503.03585](https://arxiv.org/abs/1503.03585)
 * Yang Song, Stefano Ermon (2019). **Generative Modeling by Estimating Gradients of the Data Distribution**. arXiv:1907.05600. [arxiv.org/abs/1907.05600](https://arxiv.org/abs/1907.05600)
-* Jonathan Ho, Ajay Jain, Pieter Abbeel (2020). **Denoising Diffusion Probabilistic Models**. arXiv:2006.11239. [arxiv.org/abs/2006.11239](https://arxiv.org/abs/2006.11239)
 * Jiaming Song, Chenlin Meng, Stefano Ermon (2020). **Denoising Diffusion Implicit Models**. arXiv:2010.02502. [arxiv.org/abs/2010.02502](https://arxiv.org/abs/2010.02502)
 * Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma et al. (2020). **Score-Based Generative Modeling through Stochastic Differential Equations**. arXiv:2011.13456. [arxiv.org/abs/2011.13456](https://arxiv.org/abs/2011.13456)
 * Alex Nichol, Prafulla Dhariwal (2021). **Improved Denoising Diffusion Probabilistic Models**. arXiv:2102.09672. [arxiv.org/abs/2102.09672](https://arxiv.org/abs/2102.09672)
@@ -114,13 +120,10 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 
 ## Notebook 08 · Pretrained parts: encoders, CLIP and latent diffusion
 
-* Aaron van den Oord, Oriol Vinyals, Koray Kavukcuoglu (2017). **Neural Discrete Representation Learning**. arXiv:1711.00937. [arxiv.org/abs/1711.00937](https://arxiv.org/abs/1711.00937)
 * Ting Chen, Simon Kornblith, Mohammad Norouzi et al. (2020). **A Simple Framework for Contrastive Learning of Visual Representations**. arXiv:2002.05709. [arxiv.org/abs/2002.05709](https://arxiv.org/abs/2002.05709)
 * Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov et al. (2020). **An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale**. arXiv:2010.11929. [arxiv.org/abs/2010.11929](https://arxiv.org/abs/2010.11929)
-* Patrick Esser, Robin Rombach, Björn Ommer (2020). **Taming Transformers for High-Resolution Image Synthesis**. arXiv:2012.09841. [arxiv.org/abs/2012.09841](https://arxiv.org/abs/2012.09841)
 * Alec Radford, Jong Wook Kim, Chris Hallacy et al. (2021). **Learning Transferable Visual Models From Natural Language Supervision**. arXiv:2103.00020. [arxiv.org/abs/2103.00020](https://arxiv.org/abs/2103.00020)
 * Kaiming He, Xinlei Chen, Saining Xie et al. (2021). **Masked Autoencoders Are Scalable Vision Learners**. arXiv:2111.06377. [arxiv.org/abs/2111.06377](https://arxiv.org/abs/2111.06377)
-* Robin Rombach, Andreas Blattmann, Dominik Lorenz et al. (2021). **High-Resolution Image Synthesis with Latent Diffusion Models**. arXiv:2112.10752. [arxiv.org/abs/2112.10752](https://arxiv.org/abs/2112.10752)
 * Aditya Ramesh, Prafulla Dhariwal, Alex Nichol et al. (2022). **Hierarchical Text-Conditional Image Generation with CLIP Latents**. arXiv:2204.06125. [arxiv.org/abs/2204.06125](https://arxiv.org/abs/2204.06125)
 * Chitwan Saharia, William Chan, Saurabh Saxena et al. (2022). **Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding**. arXiv:2205.11487. [arxiv.org/abs/2205.11487](https://arxiv.org/abs/2205.11487)
 * Xiaohua Zhai, Basil Mustafa, Alexander Kolesnikov et al. (2023). **Sigmoid Loss for Language Image Pre-Training**. arXiv:2303.15343. [arxiv.org/abs/2303.15343](https://arxiv.org/abs/2303.15343)
@@ -143,7 +146,5 @@ programmatically against arXiv / CrossRef (`papers_meta.json`); regenerate with 
 * Hangbo Bao, Li Dong, Songhao Piao et al. (2021). **BEiT: BERT Pre-Training of Image Transformers**. arXiv:2106.08254. [arxiv.org/abs/2106.08254](https://arxiv.org/abs/2106.08254)
 * Jacob Austin, Daniel D. Johnson, Jonathan Ho et al. (2021). **Structured Denoising Diffusion Models in Discrete State-Spaces**. arXiv:2107.03006. [arxiv.org/abs/2107.03006](https://arxiv.org/abs/2107.03006)
 * Huiwen Chang, Han Zhang, Lu Jiang et al. (2022). **MaskGIT: Masked Generative Image Transformer**. arXiv:2202.04200. [arxiv.org/abs/2202.04200](https://arxiv.org/abs/2202.04200)
-* Keyu Tian, Yi Jiang, Zehuan Yuan et al. (2024). **Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction**. arXiv:2404.02905. [arxiv.org/abs/2404.02905](https://arxiv.org/abs/2404.02905)
 * Subham Sekhar Sahoo, Marianne Arriola, Yair Schiff et al. (2024). **Simple and Effective Masked Diffusion Language Models**. arXiv:2406.07524. [arxiv.org/abs/2406.07524](https://arxiv.org/abs/2406.07524)
-* Tianhong Li, Yonglong Tian, He Li et al. (2024). **Autoregressive Image Generation without Vector Quantization**. arXiv:2406.11838. [arxiv.org/abs/2406.11838](https://arxiv.org/abs/2406.11838)
 * Shen Nie, Fengqi Zhu, Zebin You et al. (2025). **Large Language Diffusion Models**. arXiv:2502.09992. [arxiv.org/abs/2502.09992](https://arxiv.org/abs/2502.09992)

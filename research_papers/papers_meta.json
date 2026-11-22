@@ -1787,5 +1787,14 @@
    "Omer Levy"
   ],
   "published": "2022-03-30"
+ },
+ "1511.01844": {
+  "title": "A note on the evaluation of generative models",
+  "authors": [
+   "Lucas Theis",
+   "A\u00e4ron van den Oord",
+   "Matthias Bethge"
+  ],
+  "published": "2015-11-05"
  }
 }
