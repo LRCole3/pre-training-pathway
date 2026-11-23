@@ -1,0 +1,12 @@
+notebook,family,model,metric,value,recall_mean,precision,coverage,nfe,params
+01_ngrams_embeddings,language,"window neural LM, 16 tokens","gap to the floor, nats per token",0.2685353586627932,0.6344000000000001,,,,154737.0
+02_recurrent,language,LSTM + dot-product attention,"gap to the floor, nats per token",0.04875491356391626,1.0,,,,57105.0
+03_transformer,language,"transformer, modern block, 13,500 steps","gap to the floor, nats per token",0.046355945820996336,0.9997999999999999,,,,108817.0
+04_objectives,language,"causal transformer (relative bias), 3,000 steps","gap to the floor, nats per token",0.03912399506110864,1.0,,,,109081.0
+05_scaling,language,"causal transformer, 109k parameters, 3,000 steps","gap to the floor, nats per token",0.03912399506110864,1.0,,,,109081.0
+06_image_generators,image,"WGAN-GP, median of 3 seeds",FD,13.840113549071054,,0.7186629526462396,0.46518105849582175,1.0,
+07_diffusion,image,final recipe,FD,6.9920535795981635,,0.9526462395543176,0.9387186629526463,50.0,
+08_parts,image,"latent diffusion, no regulariser",FD,6.502274334827892,,0.9637883008356546,0.9777158774373259,50.0,
+09_dit,image,"base DiT, 3,000 steps",FD,5.50338153842185,,0.958217270194986,0.924791086350975,50.0,
+10_capstone,language,"autoregressive, rotary positions","gap to the floor, nats per token",0.05472634529609399,1.0,,,,242961.0
+10_capstone,image,"Gaussian diffusion over patches, 50 steps",FD,6.886696094580774,,0.9080779944289693,0.8885793871866295,50.0,246084.0
