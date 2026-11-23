@@ -1852,5 +1852,45 @@
    "Lei Bai"
   ],
   "published": "2024-02-19"
+ },
+ "2211.15089": {
+  "title": "Continuous diffusion for categorical data",
+  "authors": [
+   "Sander Dieleman",
+   "Laurent Sartran",
+   "Arman Roshannai",
+   "Nikolay Savinov",
+   "Yaroslav Ganin",
+   "Pierre H. Richemond",
+   "Arnaud Doucet",
+   "Robin Strudel",
+   "Chris Dyer",
+   "Conor Durkan",
+   "Curtis Hawthorne",
+   "R\u00e9mi Leblond",
+   "Will Grathwohl",
+   "Jonas Adler"
+  ],
+  "published": "2022-11-28"
+ },
+ "2310.16834": {
+  "title": "Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution",
+  "authors": [
+   "Aaron Lou",
+   "Chenlin Meng",
+   "Stefano Ermon"
+  ],
+  "published": "2023-10-25"
+ },
+ "2205.14217": {
+  "title": "Diffusion-LM Improves Controllable Text Generation",
+  "authors": [
+   "Xiang Lisa Li",
+   "John Thickstun",
+   "Ishaan Gulrajani",
+   "Percy Liang",
+   "Tatsunori B. Hashimoto"
+  ],
+  "published": "2022-05-27"
  }
 }

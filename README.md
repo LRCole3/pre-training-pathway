@@ -41,7 +41,7 @@ modern design choices pay off only at scales a laptop cannot reach. Results are 
 | 07 | [The diffusion training design space](07_diffusion_design_space.ipynb) | DDPM and its training choices | Schedules; prediction targets; loss weighting; preconditioning; EMA | Pixel space, MLP backbone, no text | available |
 | 08 | [Pretrained parts: encoders, CLIP, latent diffusion](08_representations_and_latent_diffusion.ipynb) | MAE, contrastive learning, CLIP-style model, latent diffusion | Mask ratio; softmax vs sigmoid contrastive loss; KL vs VQ latents | The backbone still does not scale | available |
 | 09 | [Pretraining diffusion transformers](09_pretraining_diffusion_transformers.ipynb) | DiT, flow matching, scaling, training accelerators | Conditioning route; position scheme; timestep sampling; masking; REPA | Base models still need post-training | available |
-| 10 | [Capstone: one architecture, three objectives](10_capstone_unified_pretraining.ipynb) | Autoregressive vs masked vs diffusion, for text and images | Generation order; masking schedule; discrete vs continuous tokens | The post-training series starts here | coming next |
+| 10 | [Capstone: one architecture, three objectives](10_capstone_unified_pretraining.ipynb) | Autoregressive, masked diffusion and Gaussian diffusion on one backbone, for text and images | Objective per kind of data; positions for models that see both sides; unmasking order; image tokens; the memorisation check | The post-training series starts here | available |
 
 ## Getting started
 
