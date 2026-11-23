@@ -95,7 +95,7 @@ notebook says so where it happens.
 * **09.** Larger patches were better (FD 6.3, 8.1, 13.4 for 4, 16 and 64 tokens). Flow matching did not beat
   clean-image diffusion. The gain from representation alignment disappeared with sinusoidal positions.
 * **10.** The autoregressive image model reached the best FD of the series by copying its training set (87% of
-  samples). Masked and Gaussian diffusion language models trained poorly until given relative positions.
+  samples). Masked and Gaussian diffusion language models trained poorly with sinusoidal positions and much better with rotary positions (RoPE).
 
 ## Limits
 
