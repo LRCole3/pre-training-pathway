@@ -61,7 +61,8 @@ def save_gif(fig, update, frames, name, fps=5, dpi=80):
     frames = list(frames)
     FuncAnimation(fig, update, frames=frames, blit=False).save(path, writer=PillowWriter(fps=fps), dpi=dpi)
     plt.close(fig)
-    print(f"saved figures/{name}  ({len(frames)} frames, {os.path.getsize(path) / 1024:.0f} kB)")
+    # frames drawn: the GIF writer stores a run of identical frames (the pause at the end) as one longer frame
+    print(f"saved figures/{name}  ({len(frames)} frames drawn, {os.path.getsize(path) / 1024:.0f} kB)")
     return "figures/" + name
 
 
