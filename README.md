@@ -108,8 +108,10 @@ notebook says so where it happens.
   rotary positions at other image resolutions, and a relative position bias on the shared backbone of notebook 10.
 * **Simplified variants.** Masked training in notebook 09 and Gaussian diffusion on word vectors in notebook 10 are
   simplified versions of the published methods; the notebooks describe the differences.
-* **Environment.** The notebooks were executed in order on one machine (macOS, Python 3.12, CPU). They were not
-  re-run from a fresh clone, and the Colab path is untested.
+* **Environment.** The notebooks were executed in order on one machine (macOS, Python 3.12, CPU). From a fresh
+  clone, notebook 01 was re-run in full and reproduced its scorecard rows exactly, notebook 10 was run with
+  shortened training, and the two helpers that later notebooks share (the judge and the vision encoder) were rebuilt
+  from nothing. Notebooks 02 to 09 were not re-run from a fresh clone, and the Colab path is untested.
 
 ## Getting started
 
